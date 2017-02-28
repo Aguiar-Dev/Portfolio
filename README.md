@@ -6,16 +6,12 @@ This repository is composed of various works that I have realized throughout my 
 
 The final purpose of this project is to better display my experience and knowledge gained throughout my time as a student. Each section will have meaningful instructions on how to utilize them and guide you through my portfolio repository. Thanks for taking the time to view this repo, I hope that you enjoy the work.
 
----
-
 ## Table of Contents
 
 - TBD
 - TBD
 - TBD
 - TBD
-
----
 
 ## Contact Me
 
