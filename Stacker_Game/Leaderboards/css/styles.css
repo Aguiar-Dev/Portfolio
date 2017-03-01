@@ -1,0 +1,95 @@
+body {
+	width: 100%;
+	background: #F0F0F0;
+	margin-left: auto;
+	margin-right: auto;
+	font: 100%/1.2em "Helvetica Neue", sans-serif;
+	color: #A3301B;
+}
+
+#content {
+	width: 70%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	width: 500px;
+	margin: 20px auto;
+	color: #8F2A17;
+	font-size: 200%;
+	text-align: center;
+}
+
+h3 {
+	width: 450px;
+	margin: 10px auto;
+	color: #A3301B;
+	font-size: 150%;
+	text-align: center;
+}
+
+hr {
+	content: " ";
+	margin: 0 auto 15px auto;
+	border: none;
+	width: 340px;
+	height: 3px;
+	background: #0D0D0D;
+
+}
+
+hr + p {
+	margin: 0 auto;
+	text-align: center;
+	color: #8F2A17;
+	font-weight: 500;
+}
+
+button {
+	display: block;
+	width: 200px;
+	margin: 20px auto;
+	padding: 10px;
+	font-size: 90%;
+	color: #FCFFF5;
+	background: #0D0D0D;
+	border: 2px solid #0D0D0D;
+}
+
+button:hover {
+	cursor: pointer;
+	color: #FCFFF5;
+	background: #8F2A17;
+}
+
+button:active {
+	outline: none;
+	background: #8F2A17;
+}
+
+button:focus {
+	outline: none;
+}
+
+#data_holder {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.data_box {
+	width: 30%;
+	margin: 0 auto;
+	padding: 2px;
+	text-align: center;
+	border-left: 2px solid #0D0D0D;
+	border-right: 2px solid #0D0D0D;
+}
+
+
+
+
+
+
+
+
