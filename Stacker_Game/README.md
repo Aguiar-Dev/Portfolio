@@ -1,4 +1,4 @@
-*[back to root directory](TBD)*
+*[back to root directory](../)*
 
 # Arduino: Arcade Stacker Game
 
