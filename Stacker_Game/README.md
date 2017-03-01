@@ -25,7 +25,7 @@ As for the software portion follow these simple and quick steps to get it set up
 
 1. First check and make sure to have the Arduino Editor installed in order to use the libraries and builds. If the editor is not installed then please install following the instructions *[here](https://www.arduino.cc/en/Guide/HomePage)*.
 
-2. If step 1 is completed then proceed to clone this branch of the repo. In order to do this open terminal and run `git clone -b branchName --single-branch TBD`.
+2. If the initial step is completed then proceed to clone this branch of the repo. In order to do this open terminal, `cd destination` and run `git clone https://github.com/FernandoAguiarGuevarez/Stacker-Game.git`.
 
 3. Next make sure you have the correct libraries installed in the IDE in order for the software to function properly. Refer to the *[Libraries Section](#libraries)* for instructions on this.
 
