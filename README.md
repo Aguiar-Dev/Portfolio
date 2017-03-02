@@ -10,6 +10,8 @@ The final purpose of this project is to better display my experience and knowled
 
 - [Stacker Game](./Stacker_Game/)
 - [Javascript Duel](./Javascript_Duel/)
+- AGILE Research
+- ES6 Overview and Guide
 
 ## Contact Me
 
