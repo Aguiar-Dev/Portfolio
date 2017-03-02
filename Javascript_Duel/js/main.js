@@ -31,14 +31,14 @@ var players = [{
 
 /**** Variable Declarations ****/
 var round = 0;
-var display = document.getElementById('roundCount');
+var display = document.getElementById('round_count');
 var p1Health = document.getElementById('player1P');
 var p2Health = document.getElementById('player2P');
 
 /**** Modify Player names and health displays ****/
 p1Health.innerHTML = players[0].name + ': ' + players[0].hp + 'HP';
 p2Health.innerHTML = players[1].name + ': ' + players[1].hp + 'HP';
-display.defaultValue = 'Round - ' + round;
+display.innerHTML = 'Round - ' + round;
 
 /**** Game Function ****/
 function gameStart() {
@@ -55,7 +55,7 @@ var fight = function() {
         player1: Math.floor(Math.random() * (players[0].dmg - dmgMult) + 1),
         player2: Math.floor(Math.random() * (players[1].dmg - dmgMult) + 1)
     };
-    
+
     //Subtracting Player Damage from HP
     players[0].hp -= dmg.player1;
     players[1].hp -= dmg.player2;
@@ -68,12 +68,11 @@ var fight = function() {
         round++;
         p1Health.innerHTML = players[0].name + ': ' + players[0].hp + 'HP';
         p2Health.innerHTML = players[1].name + ': ' + players[1].hp + 'HP';
-        display.defaultValue = 'Round - ' + round;
+        display.innerHTML = 'Round - ' + round;
     } else {
         p1Health.innerHTML = players[0].name + ': ' + players[0].hp + 'HP';
         p2Health.innerHTML = players[1].name + ': ' + players[1].hp + 'HP';
-        display.defaultValue = result;
-        display.style.fontSize = 'x-small';
+        display.innerHTML = result;
         button.innerHTML = 'Restart';
         button.removeEventListener('click', gameStart, false);
         button.addEventListener('click', restart, false);
@@ -117,7 +116,7 @@ var restart = function() {
     /**** Reset HTML View ****/
     p1Health.innerHTML = players[0].name + ': ' + players[0].hp + 'HP';
     p2Health.innerHTML = players[1].name + ': ' + players[1].hp + 'HP';
-    display.defaultValue = 'Round - ' + round;
+    display.innerHTML = 'Round - ' + round;
 
     /**** Reset the FIGHT btn ****/
     button.innerHTML = 'FIGHT!';
