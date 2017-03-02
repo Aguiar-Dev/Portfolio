@@ -1,0 +1,110 @@
+* {
+	margin:0; padding:0;
+}
+
+body{
+	background: url('../images/grey_wash_wall.png') repeat;
+}
+
+#scores{
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+#player1{
+	width: 50%;
+	margin: 0 auto;
+	float:left;
+}
+
+#player2{
+	width: 50%;
+	margin: 0 auto;
+	float:left;
+}
+
+#player1 p{
+	font-family: arial;
+	font-size:  25px;
+	margin: 0 0 0 40px;
+	text-align: left;
+}
+
+#player2 p{
+	font-family: arial;
+	font-size:  25px;
+	margin: 0 40px 0 0;
+	text-align: right;
+}
+
+#fight_btn{
+	position: absolute;
+	z-index: 25;
+	margin: 30% 44%;
+}
+
+#fight_bg{
+	position: fixed;
+	margin: 0 auto;
+	z-index: 10;
+	-webkit-background-size: cover; /*for webKit*/
+    -moz-background-size: cover; /*Mozilla*/
+    -o-background-size: cover; /*opera*/
+    background-size: cover; /*generic*/
+}
+
+#fight_bg img{
+	height: 100%;
+	width: 100%;
+}
+
+.heading{
+	color: #1c80b3; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 21px;
+}
+
+.buttonblue {
+	-moz-box-shadow:inset 0px 1px 0px 0px #F20521;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #F20521;
+	box-shadow:inset 0px 1px 0px 0px #F20521;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F20521), color-stop(1, #BA0419) );
+	background:-moz-linear-gradient( center top, #F20521 5%, #BA0419 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#40a3d7', endColorstr='#1b7fb3');
+	background-color:#1b7fb3;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+	border:1px solid #BA0419;
+	display:inline-block;
+	color:#ffffff !important;
+	font-family:'Open Sans',arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:8px 25px;
+	text-decoration:none;
+}
+
+.buttonblue:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #BA0419), color-stop(1, #F20521) );
+	background:-moz-linear-gradient( center top, #BA0419 5%, #F20521 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b7fb3', endColorstr='#40a3d7');
+	background-color:#BA0419;
+	text-decoration:none !important;	
+}
+
+.buttonblue:active {
+	position:relative;
+	top:1px;
+}
+
+#round_number input{
+	position: relative;
+	width: 115px;
+	text-align: center;
+}
+
+.clear{
+	clear: both;
+}
