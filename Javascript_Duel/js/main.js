@@ -117,6 +117,14 @@ var restart = function() {
     /**** Round VAR Declaration ****/
     round = 0;
 
+    /**** Reset HTML View ****/
+    p1Health.innerHTML = players[0].name + ': ' + players[0].hp + 'HP';
+    p2Health.innerHTML = players[1].name + ': ' + players[1].hp + 'HP';
+    display.defaultValue = 'Round - ' + round;
+
+    /**** Reset the FIGHT btn ****/
+    button.innerHTML = 'FIGHT!';
+
     button.removeEventListener('click', restart, false);
     button.addEventListener('click', gameStart, false);
 };
