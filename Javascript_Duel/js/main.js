@@ -55,16 +55,16 @@ var fight = function() {
         player1: Math.floor(Math.random() * (players[0].dmg - dmgMult) + 1),
         player2: Math.floor(Math.random() * (players[1].dmg - dmgMult) + 1)
     };
-
+    
     //Subtracting Player Damage from HP
     players[0].hp -= dmg.player1;
     players[1].hp -= dmg.player2;
 
     //Call the WinnerCheck function and store the returned data
-    var results = winnerCheck();
+    var result = winnerCheck();
 
     //Check results for any outcome and break out of the for loop
-    if (results === 'No Winner') {
+    if (!result) {
         round++;
         p1Health.innerHTML = players[0].name + ': ' + players[0].hp + 'HP';
         p2Health.innerHTML = players[1].name + ': ' + players[1].hp + 'HP';
@@ -72,7 +72,7 @@ var fight = function() {
     } else {
         p1Health.innerHTML = players[0].name + ': ' + players[0].hp + 'HP';
         p2Health.innerHTML = players[1].name + ': ' + players[1].hp + 'HP';
-        display.defaultValue = results;
+        display.defaultValue = result;
         display.style.fontSize = 'x-small';
         button.innerHTML = 'Restart';
         button.removeEventListener('click', gameStart, false);
@@ -83,7 +83,7 @@ var fight = function() {
 
 var winnerCheck = function() {
     //Set results to no winner
-    var result = 'No Winner';
+    var result;
 
     //Change results depending on the outcome using conditionals
     if (players[0].hp < 1 && players[1].hp < 1) {
