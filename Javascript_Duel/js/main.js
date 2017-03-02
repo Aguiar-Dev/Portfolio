@@ -19,12 +19,12 @@ var names = ['Superman', 'Batman', 'Joker', 'Lex Luthor', 'Green Arrow', 'Deaths
 /**** Players Object Array ****/
 var players = [{
         name: names[Math.floor(Math.random() * names.length)],
-        dmg: 20,
+        dmg: 30,
         hp: 100
     },
     {
         name: names[Math.floor(Math.random() * names.length)],
-        dmg: 20,
+        dmg: 30,
         hp: 100
     }
 ];
@@ -49,14 +49,11 @@ function gameStart() {
 /**** Declaring Functions ****/
 var fight = function() {
 
-    var minDmg = {
-        player1: players[0].dmg * 0.5,
-        player2: players[1].dmg * 0.5
-    };
+    var dmgMult = Math.floor((Math.random() * 25) + 1);
 
     var dmg = {
-        player1: Math.ceil(Math.random() * (players[0].dmg - minDmg.player1) + minDmg.player1),
-        player2: Math.ceil(Math.random() * (players[1].dmg - minDmg.player2) + minDmg.player2)
+        player1: Math.floor(Math.random() * (players[0].dmg - dmgMult) + 1),
+        player2: Math.floor(Math.random() * (players[1].dmg - dmgMult) + 1)
     };
 
     //Subtracting Player Damage from HP
@@ -105,12 +102,12 @@ var restart = function() {
     /**** Player One VARS ****/
     players = [{
             name: names[Math.floor(Math.random() * names.length)],
-            dmg: 20,
+            dmg: 30,
             hp: 100
         },
         {
             name: names[Math.floor(Math.random() * names.length)],
-            dmg: 20,
+            dmg: 30,
             hp: 100
         }
     ];
