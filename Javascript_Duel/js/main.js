@@ -18,14 +18,14 @@ var names = ['Superman', 'Batman', 'Joker', 'Lex Luthor', 'Green Arrow', 'Deaths
 
 /**** Players Object Array ****/
 var players = [{
-        Name: names[Math.floor(Math.random() * names.length)],
-        Dmg: 20,
-        Hp: 100
+        name: names[Math.floor(Math.random() * names.length)],
+        dmg: 20,
+        hp: 100
     },
     {
-        Name: names[Math.floor(Math.random() * names.length)],
-        Dmg: 20,
-        Hp: 100
+        name: names[Math.floor(Math.random() * names.length)],
+        dmg: 20,
+        hp: 100
     }
 ];
 
@@ -36,8 +36,8 @@ var p1Health = document.getElementById('player1P');
 var p2Health = document.getElementById('player2P');
 
 /**** Modify Player names and health displays ****/
-p1Health.innerHTML = players[0].Name + ': ' + players[0].Hp + 'HP';
-p2Health.innerHTML = players[1].Name + ': ' + players[1].Hp + 'HP';
+p1Health.innerHTML = players[0].name + ': ' + players[0].hp + 'HP';
+p2Health.innerHTML = players[1].name + ': ' + players[1].hp + 'HP';
 display.defaultValue = 'Round - ' + round;
 
 /**** Game Function ****/
@@ -50,18 +50,18 @@ function gameStart() {
 var fight = function() {
 
     var minDmg = {
-        player1: players[0].Dmg * 0.5,
-        player2: players[1].Dmg * 0.5
+        player1: players[0].dmg * 0.5,
+        player2: players[1].dmg * 0.5
     };
 
     var dmg = {
-        player1: Math.ceil(Math.random() * (players[0].Dmg - minDmg.player1) + minDmg.player1),
-        player2: Math.ceil(Math.random() * (players[1].Dmg - minDmg.player2) + minDmg.player2)
+        player1: Math.ceil(Math.random() * (players[0].dmg - minDmg.player1) + minDmg.player1),
+        player2: Math.ceil(Math.random() * (players[1].dmg - minDmg.player2) + minDmg.player2)
     };
 
     //Subtracting Player Damage from HP
-    players[0].Hp -= dmg.player1;
-    players[1].Hp -= dmg.player2;
+    players[0].hp -= dmg.player1;
+    players[1].hp -= dmg.player2;
 
     //Call the WinnerCheck function and store the returned data
     var results = winnerCheck();
@@ -69,12 +69,12 @@ var fight = function() {
     //Check results for any outcome and break out of the for loop
     if (results === 'No Winner') {
         round++;
-        p1Health.innerHTML = players[0].Name + ': ' + players[0].Hp + 'HP';
-        p2Health.innerHTML = players[1].Name + ': ' + players[1].Hp + 'HP';
+        p1Health.innerHTML = players[0].name + ': ' + players[0].hp + 'HP';
+        p2Health.innerHTML = players[1].name + ': ' + players[1].hp + 'HP';
         display.defaultValue = 'Round - ' + round;
     } else {
-        p1Health.innerHTML = players[0].Name + ': ' + players[0].Hp + 'HP';
-        p2Health.innerHTML = players[1].Name + ': ' + players[1].Hp + 'HP';
+        p1Health.innerHTML = players[0].name + ': ' + players[0].hp + 'HP';
+        p2Health.innerHTML = players[1].name + ': ' + players[1].hp + 'HP';
         display.defaultValue = results;
         display.style.fontSize = 'x-small';
         button.innerHTML = 'Restart';
@@ -89,12 +89,12 @@ var winnerCheck = function() {
     var result = 'No Winner';
 
     //Change results depending on the outcome using conditionals
-    if (players[0].Hp < 1 && players[1].Hp < 1) {
+    if (players[0].hp < 1 && players[1].hp < 1) {
         result = 'You both died. DRAW';
-    } else if (players[0].Hp < 1) {
-        result = players[1].Name + ' Wins!';
-    } else if (players[1].Hp < 1) {
-        result = players[0].Name + ' Wins!';
+    } else if (players[0].hp < 1) {
+        result = players[1].name + ' Wins!';
+    } else if (players[1].hp < 1) {
+        result = players[0].name + ' Wins!';
     }
 
     //Return the result into the fight function
@@ -104,14 +104,14 @@ var winnerCheck = function() {
 var restart = function() {
     /**** Player One VARS ****/
     players = [{
-            Name: names[Math.floor(Math.random() * names.length)],
-            Dmg: 20,
-            Hp: 100
+            name: names[Math.floor(Math.random() * names.length)],
+            dmg: 20,
+            hp: 100
         },
         {
-            Name: names[Math.floor(Math.random() * names.length)],
-            Dmg: 20,
-            Hp: 100
+            name: names[Math.floor(Math.random() * names.length)],
+            dmg: 20,
+            hp: 100
         }
     ];
     /**** Round VAR Declaration ****/
