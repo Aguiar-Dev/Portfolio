@@ -1,4 +1,4 @@
-*[back to root directory](../../)*
+*[back to root directory](../)*
 
 # Simple Javascript Duel
 
