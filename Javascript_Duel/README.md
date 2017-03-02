@@ -1,3 +1,5 @@
+*[back to root directory](../../../)*
+
 # Simple Javascript Duel
 
 ## Table of Contents

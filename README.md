@@ -9,9 +9,7 @@ The final purpose of this project is to better display my experience and knowled
 ## Table of Contents
 
 - [Stacker Game](./Stacker_Game/)
-- TBD
-- TBD
-- TBD
+- [Javascript Duel](./Javascript_Duel/)
 
 ## Contact Me
 
