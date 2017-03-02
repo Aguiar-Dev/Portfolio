@@ -8,7 +8,7 @@
 
 /**** Button Use ****/
 var button = document.getElementById('btn');
-button.addEventListener('click', gameStart, false);
+button.addEventListener('click', fight, false);
 
 /**** Code for Fight Button ****/
 button.innerHTML = 'FIGHT!';
@@ -40,14 +40,8 @@ p1Health.innerHTML = players[0].name + ': ' + players[0].hp + 'HP';
 p2Health.innerHTML = players[1].name + ': ' + players[1].hp + 'HP';
 display.innerHTML = 'Round - ' + round;
 
-/**** Game Function ****/
-function gameStart() {
-    /**** Main Code Starts Here ****/
-    fight();
-}
-
 /**** Declaring Functions ****/
-var fight = function() {
+function fight(){
 
     var dmgMult = Math.floor((Math.random() * 25) + 1);
 
@@ -74,11 +68,11 @@ var fight = function() {
         p2Health.innerHTML = players[1].name + ': ' + players[1].hp + 'HP';
         display.innerHTML = result;
         button.innerHTML = 'Restart';
-        button.removeEventListener('click', gameStart, false);
+        button.removeEventListener('click', fight, false);
         button.addEventListener('click', restart, false);
     }
 
-};
+}
 
 var winnerCheck = function() {
     //Set results to no winner
@@ -122,5 +116,5 @@ var restart = function() {
     button.innerHTML = 'FIGHT!';
 
     button.removeEventListener('click', restart, false);
-    button.addEventListener('click', gameStart, false);
+    button.addEventListener('click', fight, false);
 };
