@@ -2,9 +2,8 @@
  * Fernando L. Aguiar
  * Duel Fight Game - FINISHED
  * Date: 07/20/15
- PWA - Project Duel 1
- Assignment 1
- Part 1/3 of series
+ * PWA - Project Duel 1
+ * Assignment 1
 */
 
 /**** Button Use ****/
@@ -41,9 +40,6 @@ function gameStart() {
  /**** Code for Fight Button ****/
  button.innerHTML = 'FIGHT!';
 
- /**** Check for link ****/
- console.log("FIGHT!!!");
-
  /**** Declaring Functions ****/
  var fight = function () {
 
@@ -57,23 +53,12 @@ function gameStart() {
     player2: Math.ceil(Math.random() * (players[1].Dmg - minDmg.player2) + minDmg.player2)
    };
 
-   //console.log(dmg1);
-   //console.log(dmg2);
-
    //Subtracting Player Damage from HP
    players[0].Hp -= dmg.player1;
    players[1].Hp -= dmg.player2;
 
-   //console.log(player1Hp);
-   //console.log(player2Hp);
-
-   console.log('----- Fight Function -----');
-   console.log(players[0].Name + ': ' + players[0].Hp + ' ' + players[1].Name + ': ' + players[1].Hp);
-
    //Call the WinnerCheck function and store the returned data
    var results = winnerCheck();
-
-   console.log(results);
 
    //Check results for any outcome and break out of the for loop
    if (results === 'No Winner') {
@@ -97,7 +82,6 @@ function gameStart() {
  var winnerCheck = function () {
   //Set results to no winner
   var result = 'No Winner';
-  console.log('----- WinnerCheck Function -----');
 
   //Change results depending on the outcome using conditionals
   if (players[0].Hp < 1 && players[1].Hp < 1) {
@@ -117,7 +101,6 @@ function gameStart() {
  };
 
  /**** Main Code Starts Here ****/
- console.log('Program Starts Here');
  fight();
 }
 
