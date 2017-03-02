@@ -10,6 +10,9 @@
 var button = document.getElementById('btn');
 button.addEventListener('click', gameStart, false);
 
+/**** Code for Fight Button ****/
+button.innerHTML = 'FIGHT!';
+
 /**** Random Name Assortment to pick random names every match ****/
 var names = ['Superman', 'Batman', 'Joker', 'Lex Luthor', 'Green Arrow', 'Deathstroke', 'Wonder Woman', 'Ares', 'Martian Manhunter', 'Lobo', 'Flash', 'Doomsday', 'Green Lantern', 'Sinestro', 'General Zod', 'Batgirl', 'Harley Queen', 'Nightwing', 'Solomon Grundy', 'Catwoman', 'Scorpion', 'Killer Frost', 'Bane', 'Black Adam', 'Cyborg', 'Raven', 'Aquaman', 'Zatana', 'Shazam', 'Hawkgirl'];
 
@@ -33,15 +36,12 @@ var p1Health = document.getElementById('player1P');
 var p2Health = document.getElementById('player2P');
 
 /**** Modify Player names and health displays ****/
-p1Health.innerHTML = players[0].Name + ' HP: ' + players[0].Hp;
-p2Health.innerHTML = players[1].Name + ' HP: ' + players[1].Hp;
-display.defaultValue = 'Round: ' + round + ' - BEGIN';
+p1Health.innerHTML = players[0].Name + ': ' + players[0].Hp + 'HP';
+p2Health.innerHTML = players[1].Name + ': ' + players[1].Hp + 'HP';
+display.defaultValue = 'Round - ' + round;
 
 /**** Game Function ****/
 function gameStart() {
-    /**** Code for Fight Button ****/
-    button.innerHTML = 'FIGHT!';
-
     /**** Main Code Starts Here ****/
     fight();
 }
@@ -69,12 +69,12 @@ var fight = function() {
     //Check results for any outcome and break out of the for loop
     if (results === 'No Winner') {
         round++;
-        p1Health.innerHTML = players[0].Name + ' HP: ' + players[0].Hp;
-        p2Health.innerHTML = players[1].Name + ' HP: ' + players[1].Hp;
-        display.defaultValue = 'Round: ' + round + ' - BEGIN';
+        p1Health.innerHTML = players[0].Name + ': ' + players[0].Hp + 'HP';
+        p2Health.innerHTML = players[1].Name + ': ' + players[1].Hp + 'HP';
+        display.defaultValue = 'Round - ' + round;
     } else {
-        p1Health.innerHTML = players[0].Name + ' HP: ' + players[0].Hp;
-        p2Health.innerHTML = players[1].Name + ' HP: ' + players[1].Hp;
+        p1Health.innerHTML = players[0].Name + ': ' + players[0].Hp + 'HP';
+        p2Health.innerHTML = players[1].Name + ': ' + players[1].Hp + 'HP';
         display.defaultValue = results;
         display.style.fontSize = 'x-small';
         button.innerHTML = 'Restart';
