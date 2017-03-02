@@ -1,110 +1,97 @@
-* {
-	margin:0; padding:0;
+body {
+    width: 100%;
+    margin: 0 auto;
+    font: normal 24px Arial, Helvetica, sans-serif;
+    background: #F06060;
 }
 
-body{
-	background: url('../images/grey_wash_wall.png') repeat;
+#scores {
+    background-color: #cb4e4e;
+    color: #fff;
+    margin: 0 auto;
+    height: 40px;
 }
 
-#scores{
-	background: #fff;
-	width: 100%;
-	height: 100%;
+#player1 {
+    width: 50%;
+    margin: 5px auto;
+    float: left;
 }
 
-#player1{
-	width: 50%;
-	margin: 0 auto;
-	float:left;
+#player2 {
+    width: 50%;
+    margin: 5px auto;
+    float: left;
 }
 
-#player2{
-	width: 50%;
-	margin: 0 auto;
-	float:left;
+#player1 p {
+    margin: 0 0 0 40px;
+    text-align: left;
 }
 
-#player1 p{
-	font-family: arial;
-	font-size:  25px;
-	margin: 0 0 0 40px;
-	text-align: left;
+#player2 p {
+    margin: 0 40px 0 0;
+    text-align: right;
 }
 
-#player2 p{
-	font-family: arial;
-	font-size:  25px;
-	margin: 0 40px 0 0;
-	text-align: right;
+#fight_bg {
+    position: absolute;
+    margin: 0 auto;
+    z-index: 10;
+    top: 40px;
 }
 
-#fight_btn{
-	position: absolute;
-	z-index: 25;
-	margin: 30% 44%;
+#fight_bg img {
+    height: 100%;
+    width: 100%;
 }
 
-#fight_bg{
-	position: fixed;
-	margin: 0 auto;
-	z-index: 10;
-	-webkit-background-size: cover; /*for webKit*/
-    -moz-background-size: cover; /*Mozilla*/
-    -o-background-size: cover; /*opera*/
-    background-size: cover; /*generic*/
+.heading {
+    color: #1c80b3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
 }
 
-#fight_bg img{
-	height: 100%;
-	width: 100%;
+#fight_btn {
+    position: absolute;
+    width: 230px;
+    z-index: 25;
+    top: 50%;
+    left: 50%;
+    margin-left: -115px;
+    text-align: center;
 }
 
-.heading{
-	color: #1c80b3; 
-	font-family: Arial, Helvetica, sans-serif; 
-	font-size: 21px;
+#btn {
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px #ab3c3c;
+    background: #cb4e4e;
+    border-radius: 40px;
+    padding: 25px 80px;
+    font: 700 18px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
-.buttonblue {
-	-moz-box-shadow:inset 0px 1px 0px 0px #F20521;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #F20521;
-	box-shadow:inset 0px 1px 0px 0px #F20521;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F20521), color-stop(1, #BA0419) );
-	background:-moz-linear-gradient( center top, #F20521 5%, #BA0419 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#40a3d7', endColorstr='#1b7fb3');
-	background-color:#1b7fb3;
-	-moz-border-radius:1px;
-	-webkit-border-radius:1px;
-	border-radius:1px;
-	border:1px solid #BA0419;
-	display:inline-block;
-	color:#ffffff !important;
-	font-family:'Open Sans',arial;
-	font-size:20px;
-	font-weight:bold;
-	padding:8px 25px;
-	text-decoration:none;
+#btn:hover {
+    box-shadow: 0 4px #ab3c3c;
+    margin-top: 2px;
 }
 
-.buttonblue:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #BA0419), color-stop(1, #F20521) );
-	background:-moz-linear-gradient( center top, #BA0419 5%, #F20521 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b7fb3', endColorstr='#40a3d7');
-	background-color:#BA0419;
-	text-decoration:none !important;	
+#btn:active {
+    box-shadow: none;
+    margin-top: 6px;
 }
 
-.buttonblue:active {
-	position:relative;
-	top:1px;
-}
-
-#round_number input{
-	position: relative;
-	width: 115px;
-	text-align: center;
-}
-
-.clear{
-	clear: both;
+#round_count {
+    font: bold 20px Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
 }
