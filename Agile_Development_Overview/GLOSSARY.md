@@ -186,7 +186,7 @@ The following is a collection of all vocabulary terms that can be associated wit
 
 **Task -** Is a single unit of work broken down from a *[user story](#userStory)*. Tasks are estimated in hours (or *[story points](#storyPoints)*) remaining by the developer working on them.
 
-**Taskboard -** An Agile task board is a physical or online visual representation of user stories broken down into tasks or work units.
+**Task Board -** An Agile task board is a physical or online visual representation of user stories broken down into tasks or work units.
 
 **Team/Team Member -** In an Agile, *[Scrum](#s)* or *[Kanban](#k)* environment, a teams is a small, highly functioning group of five to nine people who collaboratively work together to complete an *[iteration](#iterations)* or project. *[Scrum Teams](#scrumTeam)* are cross-functional; Kanban teams can be either cross-functional or specialist driven.
 
