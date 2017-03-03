@@ -234,3 +234,5 @@ The following is a collection of all vocabulary terms that can be associated wit
 [Ultimate Agile Dictionary](https://www.smartsheet.com/ultimate-agile-dictionary)
 
 [Learning the Agile Vocabulary](https://www.captechconsulting.com/blogs/learning-the-agile-vocabulary)
+
+[Agile Terms You must Know](https://blog.taiga.io/agile-terms-you-must-know.html)

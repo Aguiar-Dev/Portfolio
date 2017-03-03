@@ -79,3 +79,5 @@ For more on vocabulary terms refer to the [Glossary](./GLOSSARY.md)
 - [Ultimate Agile Dictionary](https://www.smartsheet.com/ultimate-agile-dictionary)
 
 - [Learning the Agile Vocabulary](https://www.captechconsulting.com/blogs/learning-the-agile-vocabulary)
+
+- [Agile Terms You Must Know](https://blog.taiga.io/agile-terms-you-must-know.html)
