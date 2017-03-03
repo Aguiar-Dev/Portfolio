@@ -2,13 +2,14 @@
 
 # Glossary
 
-The following is a collection of all vocabulary terms that can be associated with Agile Development. *[Resources](#vocabResources)*
+The following is a collection of all vocabulary terms that can be associated with Agile Development. *[Vocabulary Resources](#vocabResources)*
 
 [A](#a) – [B](#b) – [C](#c) – [D](#d) – [E](#e) – [F](#f) –
 [I](#i) – [K](#k) – [L](#l) – [P](#p) – [R](#r) – [S](#s) – [T](#t) – [U](#u) – [V](#v) – [W](#w) – [X](#x)
 
-## A
 <a name="a"></a>
+## A
+
 **Agilista -** A practitioner of Agile Software Development who is fanatical about hewing to the Agile Manifesto.
 
 **Agile Software Management -** The project management approach of developing increments of software in frequent *[iterations](#iterations)* based on evolving requirements.
@@ -23,9 +24,9 @@ The following is a collection of all vocabulary terms that can be associated wit
 
 **Application Lifecycle Management (ALM) -** Is a continuous process of managing a software application from its initial planning to its retirement.
 
----
-
 <a name="b"></a>
+## B
+
 **Backlog -** Is a changing list of product requirements based on the customer’s needs. The backlog is not to be confused with a To-Do list, rather a list of desired features.
 
 **Backlog Grooming -** Occurs at the end of a *[sprint](#sprint)*, when the team meets to make sure the backlog is ready for the next sprint. The team may remove user stories that aren’t relevant, create new stories, reassess priority, or split user stories into smaller *[tasks](#t)*. It is both an ongoing process and the name for the meeting where this action occurs.
@@ -43,9 +44,9 @@ The following is a collection of all vocabulary terms that can be associated wit
 
 **Burnup Chart -** A burnup chart tracks how much work has been completed. There are two lines on the chart - one line represents total work and the other represents for completed. The vertical axis represents the amount of work measure in *[tasks](#t)*, hours or *[story points](#storyPoints)*, while the horizontal axis represents time, usually measured in days.
 
----
-
 <a name="c"></a>
+## C
+
 **Cadence -** Describes the flow or the rhythm of events or *[tasks](#t)* in a project. It establishes a pattern that the team can follow to understand what they are doing and when it will be completed.
 
 **Capacity -** Represents the amount of work that can be completed within a certain time frame and is based on the number of hours that an individual or team will be available to complete the work.
@@ -59,35 +60,35 @@ The following is a collection of all vocabulary terms that can be associated wit
 
 **Cycle -** Refers to the total amount of time it takes for a single *[task](#t)* or work item to travel through the workflow from the beginning of work until it ships.
 
----
-
 <a name="d"></a>
+## D
+
 **Daily Scrum -** is a brief communication and status-check session facilitated by the *[Scrum Master](#scrumMaster)* where *[Scrum Teams](#scrumTeam)* share progress, report *[impediments](#i)*, and make commitments for the current *[iteration](#iterations)* or *[sprint](#sprint)*. The Daily Scrum consists of a tightly focused conversation kept to a strict timeframe; the meeting is held at the same time, every day (ideally, in the morning), and in the same location.
 
 **Daily Standup/Meeting -** is a key component of Agile methodologies and serves as a daily forum for Agile teams to share progress, report *[impediments](#i)*, and make commitments for the current *[iteration](#iterations)* or *[sprint](#sprint)*. This brief, 15-minute meeting is usually held every morning at the same time and in the same location.
 
 **Done -** Also referred to as “Done Done”, this term is used to describe all the various *[tasks](#t)* that need to happen before a story is considered done. Teams usually create  the checklist of tasks.
 
----
-
 <a name="e"></a>
+## E
+
 **Epic -** A very large *[user story](#userStory)* that, in their current state, would be difficult to estimate or to complete in a single *[iteration](#iterations)*. They are typically lower priority and are waiting to be broken down into smaller stories.
 
 <a name="estimation"></a>
 **Estimation -** The process of assigning a quantifiable measurement for the amount of workload needed to complete a project or *[task](#t)*, in order to determine the requirements to complete the project or task.
 
----
-
 <a name="f"></a>
+## F
+
 **Fail-Fast -** Is the process of starting work on a *[task](#t)* or project, obtaining immediate feedback, and then whether to continue working on the task or take a different approach - that is, adapt.
 
 **Feature Creep -** Is the tendency to add additional requirements or features to a project after development is already underway, it can occur on either a project or *[sprint](#sprint)* level.
 
 **Fibonacci Sequence -** The Fibonacci Sequence is a mathematical sequence in which each subsequent number is determined by the sum of the two previous numbers. Teams often use this sequence when playing the game of Planning Poker to estimate the workload.
 
----
-
 <a name="i"></a>
+## I
+
 **Impediment -** Is any obstacle that prevents an individual or team from completing a *[task](#t)* or project. Teams usually create a list of possible impediments called an Impediment Backlog and display this list where the team meets for *[Daily Scrums](#d)*.
 
 <a name="iterations"></a>
@@ -95,19 +96,19 @@ The following is a collection of all vocabulary terms that can be associated wit
 
 **Iterative Development -** Is the process of breaking down projects into more manageable components known as iterations.
 
----
-
 <a name="k"></a>
+## K
+
 **Kanban -** Is a highly visual framework that uses continuous workflow rather than fixed iterations to produce shippable deliverables. Kanban focuses on completing entire projects rather than *[sprints](#sprint)*.
 
----
-
 <a name="l"></a>
+## L
+
 **Lean Software Development (LSD) -** Is an example of lightweight Agile methodology applied to project development. It combines the Lean manufacturing approach pioneered by Toyota in the 1950s and Lean IT principles, and applies them to software. LSD places a strong emphasis on people and effective communication. It is defined by seven principles: Eliminate Waste, Create Knowledge, Build Quality In, Defer commitment, Optimize the Whole, Deliver Fast, Respect People.
 
----
-
 <a name="p"></a>
+## P
+
 **Pair Programming -** Is an agile software development technique in which two programmers work together at one workstation. One types in code while the other reviews each line of code as it is typed in. The person typing is called the driver. The person reviewing the code is called the observer (or navigator). The two programmers switch roles frequently.
 
 **Pigs -** Like “*[Chicken](#chicken)*” it is used most commonly in *[Scrum](#s)*, but unlike “Chickens” a “Pig” is someone who is committed and directly accountable for deliverables.
@@ -126,9 +127,9 @@ The following is a collection of all vocabulary terms that can be associated wit
 <a name="productOwner"></a>
 **Product Owner -** Represents the voice of the customer and is accountable for ensuring that the team delivers value to the business. The product Owner writes the *[acceptance criteria](#acceptanceCriteria)*, prioritizes them, and then adds them to the product backlog. Scrums teams typically have one Product Owner.
 
----
-
 <a name="r"></a>
+## R
+
 **Refactoring -** Refactoring code means to improve, clarify, and streamline the internal structure of existing code without affecting its external behavior. Refactoring does not include rewriting code or fixing *[bugs](#bugs)*.
 
 **Relative Estimation -** Is one of several types of estimations Agile teams use to determine the amount of effort needed to complete project *[tasks](#t)*. Tasks or user stories are compared against equivalent, previously completed tasks or group of tasks of similar difficulty.
@@ -138,9 +139,9 @@ The following is a collection of all vocabulary terms that can be associated wit
 
 **Release Plan -** Outlines the features to be included in an upcoming release and provides an estimated date for the release. The plan should include responsibilities, resources, and activities required to complete the release.
 
----
-
 <a name="s"></a>
+## S
+
 **Scrum -** Is a popular framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value. It is based on the adaptive and iterative methodology of software development that follows a set of predefined roles, responsibilities and meetings.
 
 <a name="scrumTeam"></a>
@@ -180,9 +181,9 @@ The following is a collection of all vocabulary terms that can be associated wit
 
 **Sustainable Pace -** Is the pace that an Agile team can work at indefinitely without resulting in developer burnout.
 
----
-
 <a name="t"></a>
+## T
+
 **Task -** Is a single unit of work broken down from a *[user story](#userStory)*. Tasks are estimated in hours (or *[story points](#storyPoints)*) remaining by the developer working on them.
 
 **Taskboard -** An Agile task board is a physical or online visual representation of user stories broken down into tasks or work units.
@@ -197,9 +198,9 @@ The following is a collection of all vocabulary terms that can be associated wit
 <a name="timebox"></a>
 **Timebox -** Refers to an assigned period of time during which an individual or team work toward an established goal. The team stops work when the time period concludes, rather than when the work is completed. The Team then assesses how much work was accomplished toward the specified goal.
 
----
-
 <a name="u"></a>
+## U
+
 **Unit Testing -** A unit test is a short program fragment written for testing and verifying a piece of code once it is completed. A piece of code either passes or fails the unit test.
 
 **User Persona -** Personas are description of the typical end-users of a given software. A persona should include skills/background, goals/expectations, and other details pertinent to their being categorized as an end-user.
@@ -207,21 +208,21 @@ The following is a collection of all vocabulary terms that can be associated wit
 <a name="userStory"></a>
 **User Stories -** A user story is a very high-level definition of a requirement written from the end-users point of view, containing just enough information so that the developers can produce a reasonable estimate of the effort to implement it.
 
----
-
 <a name="v"></a>
+## V
+
 **Velocity -** It is a relative number which describes how much work the team can get done per *[sprint](#sprint)*.
 
 **Vertical Slice -** Showing off a feature in a application that works from start to finish but may be limited in scope.
 
----
-
 <a name="w"></a>
+## W
+
 **Work In Progress (WIP) -** Is any work that has been started but has yet to be completed.
 
----
-
 <a name="x"></a>
+## X
+
 **XP -** A software development methodology which is intended to improve software quality and responsiveness to changing customer requirements. As a type of agile software development, it advocates frequent “*[releases](#release)*” in short development cycles (*[timebox](#timebox)*), which is intended to improve productivity and introduce checkpoints where new customer requirements can be adopted.
 
 
