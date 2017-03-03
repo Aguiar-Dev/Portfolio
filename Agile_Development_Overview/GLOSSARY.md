@@ -2,7 +2,7 @@
 
 # Glossary
 
-The following is a collection of all vocabulary terms that can be associated with Agile Development. *[Vocabulary Resources](#vocabResources)*
+The following is a collection of all vocabulary terms that can be associated with Agile Development. *[Glossary Resources](#glossaryResources)*
 
 [A](#a) – [B](#b) – [C](#c) – [D](#d) – [E](#e) – [F](#f) –
 [I](#i) – [K](#k) – [L](#l) – [P](#p) – [R](#r) – [S](#s) – [T](#t) – [U](#u) – [V](#v) – [W](#w) – [X](#x)
@@ -226,5 +226,11 @@ The following is a collection of all vocabulary terms that can be associated wit
 **XP -** A software development methodology which is intended to improve software quality and responsiveness to changing customer requirements. As a type of agile software development, it advocates frequent “*[releases](#release)*” in short development cycles (*[timebox](#timebox)*), which is intended to improve productivity and introduce checkpoints where new customer requirements can be adopted.
 
 
-<a name="vocabResources"></a>
+<a name="glossaryResources"></a>
 ## Glossary Resources
+
+[Agile Vocabulary](http://www.telerik.com/teampulse/agile-vocabulary)
+
+[Ultimate Agile Dictionary](https://www.smartsheet.com/ultimate-agile-dictionary)
+
+[Learning the Agile Vocabulary](https://www.captechconsulting.com/blogs/learning-the-agile-vocabulary)
