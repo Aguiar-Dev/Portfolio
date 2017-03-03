@@ -1,4 +1,4 @@
-*[back to overview](./README.md)*
+*[back to overview](../)*
 
 ## Glossary
 
