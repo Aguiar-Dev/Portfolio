@@ -1,4 +1,4 @@
-*[back to overview](../)*
+*[back to overview](./)*
 
 ## Glossary
 
