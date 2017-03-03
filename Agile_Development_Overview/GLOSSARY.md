@@ -7,7 +7,7 @@ The following is a collection of all vocabulary terms that can be associated wit
 [A](#a) – [B](#b) – [C](#c) – [D](#d) – [E](#e) – [F](#f) –
 [I](#i) – [K](#k) – [L](#l) – [P](#p) – [R](#r) – [S](#s) – [T](#t) – [U](#u) – [V](#v) – [W](#w) – [X](#x)
 
----
+### A
 <a name="a"></a>
 **Agilista -** A practitioner of Agile Software Development who is fanatical about hewing to the Agile Manifesto.
 
