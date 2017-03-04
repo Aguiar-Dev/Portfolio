@@ -1,24 +1,73 @@
 *[back to root directory](../../../)*
 
-# Agile Development Overview
+# The Overview on Agile Development
 
 ## Table of Contents
 
-1. [What is Agile?](#whatIsAgile)
-2. [Is Agile for You?](#isAgileForYou)
-3. [Key Vocabulary Terms](#vocabTerms)
-4. [Glossary](./GLOSSARY.md)
-4. [Best Practices in Agile](#bestPractices)
-5. [Resources](#resources)
+1. [Introduction](#intro)
+2. [What is the Agile Process?](#whatIsAgile)
+3. [The Agile Benefits](#benefits)
+4. [Is Agile for You?](#isAgileForYou)
+5. [Key Vocabulary Terms](#vocabTerms)
+6. [Best Practices in Agile](#bestPractices)
+7. [Glossary](./GLOSSARY.md)
+8. [Resources](#resources)
+
+<a name="intro"></a>
+## Introduction
+
+Welcome to the Overview on Agile Development, where most of the confusing and daunting information on Agile Development is made easier to understand. This overview is meant to explain the Agile Movement as a whole and showcase some of the best information on the web regarding Agile. In here you can find the best practices, vocabulary terms, popular methods and more on the Agile Movement. In order to best explain Agile I am utilizing multiple sources to collect and redact the most important information, all of these sources can be found in the [Resources Section](#resources).
+
+This overview is both a personal and professional project that I undertook in order to better inform both you, the reader, and myself on what Agile is and does. It is not as detailed as other articles or websites, but I tried to make it as informative and helpful as possible. Please keep that in mind whilst going through the information. Thanks for taking the time to read through my overview I hope it helps you better understand the amazing principles of Agile Development.
 
 <a name="whatIsAgile"></a>
-## What is Agile?
+## What is the Agile Process?
+
+***"Agile is not just a methodology, but a set of principles and philosophy" - Pearl Zhu***
+
+Many of the Agile Movement ideas surfaced around the 1970s as a reaction to traditional approaches to project development. But the Agile Development Movement was first introduced to the world in February 2001, when a group of 17 software developers met in Utah to discuss lightweight development methods. Together the seventeen published the *Manifesto for Agile Software Development*, in which they shared their combined experiences of software developing and helping others to do it.
+
+The Agile Process is in turn a collection of principles and methodologies based on iterative software development, where requirements and solutions evolve through collaboration. While the Agile Process is to be considered as the fundamental principle behind the Agile movement, there are different ways to practice these principles and turn them to concrete examples, some of these are widely popular like Scrum and Kanban, while others are less known like XP and Lean.
+
+To set the pace for this overview just remember ***Agile is not a Methodology!*** rather it is a movement that seeks alternative project management approaches to help teams to help teams respond to unpredictability through incremental, iterative work cadences and empirical feedback. Now you probably want to know what are the benefits and whether or not it is for you?
+
+<a name="benefits"></a>
+## The Agile Benefits
+
+Let's be honest, we all wanna know what makes Agile so enticing? Is it the fact that so many people use it? Is it because you won't need to do Waterfall anymore? Or is it simply because it sounds cool?
+
+All of those are part of the answer, but in truth there's a lot of reasons as to why Agile is enticing and beneficial to individuals and teams. Let's shed some light on the most important benefits of Agile Development:
+
+- Better decision making through regular team meetings and project direction.
+
+- Cost reductions by keeping both the team and stakeholders up to date, which reduces risks of unsatisfied customers and additional work.
+
+- Transparency between team members, stakeholders, project managers, and all other involved parties.
+
+- Preparedness for unknown variables by focusing on smaller tasks instead of bigger ones.
+
+- Safer revisions by maintaining regular project meetings and realizing tests through every iteration.
+
+- Increases overall team satisfaction by splitting projects into smaller tasks which in turn reduce misunderstandings, potential impediments and stressful deadline scenarios.
+
+- Promotes a team environment through which members get to know each others strengths and weaknesses in order to overcome them together.
+
+These are a few of the more important benefits, but the list of benefits is much longer than this. Now that we covered those, you are probably wondering whether it's for you or not?
 
 <a name="isAgileForYou"></a>
 ## Is Agile for You?
 
+Figuring out whether the Agile Method is for you can be difficult, if not daunting at times. But that is what I am here to do, help you figure out whether or not it is for you. Let's start by jotting down who uses it and who doesn't, then from that you can decide whether it is appropriate for your project or not.
+
+**Who uses Agile?**
+
+
+
+
+
+
 <a name="vocabTerms"></a>
-## Key Vocabulary Terms
+## Terms-to-Know
 
 These terms are used in various Agile frameworks and are crucial to learn when undertaking an Agile approach in a project or task. Most of these terms or practices are used in all Agile frameworks, but some are specific to one framework. Once they are learned you are a step closer to being a professional Agile Developer.
 
