@@ -8,10 +8,11 @@
 2. [What is the Agile Process?](#whatIsAgile)
 3. [The Agile Benefits](#benefits)
 4. [Is Agile for You?](#isAgileForYou)
-5. [Key Vocabulary Terms](#vocabTerms)
-6. [Best Practices in Agile](#bestPractices)
-7. [Glossary](./GLOSSARY.md)
-8. [Resources](#resources)
+5. [The Popular Agile Methods](#popularMethods)
+6. [Key Vocabulary Terms](#vocabTerms)
+7. [Best Practices in Agile](#bestPractices)
+8. [Glossary](./GLOSSARY.md)
+9. [Resources](#resources)
 
 <a name="intro"></a>
 ## Introduction
@@ -59,12 +60,44 @@ These are a few of the more important benefits, but the list of benefits is much
 
 Figuring out whether the Agile Method is for you can be difficult, if not daunting at times. But that is what I am here to do, help you figure out whether or not it is for you. Let's start by jotting down who uses it and who doesn't, then from that you can decide whether it is appropriate for your project or not.
 
-**Who uses Agile?**
+**Who uses the Agile Process?**
 
+The question of who uses Agile can be boiled down to various development teams, but let's cover some of the more common ones:
 
+- *Teams with projects that evolve over time*
+- *Developers who want a more reactive approach to development*
+- *Teams that work with stakeholders and outside sources*
+- *Developers that need a more organized work environment*
+- *Teams that want a process from which they can learn and improve dynamically*
+- *Teams who have cross-functional skills*
+- *Teams looking to work more collaboratively*
+- *Teams who want more interactivity between the client and the team*
+- *Developers that prepare for unknown variables*
 
+These are the most common groups of people who utilize the Agile Process. But this doesn't mean that it is designed to work for every team or project.
 
+**Who doesn't use the Agile Process?**
 
+There are many people willing to have heated discussions on why Agile doesn't work, as well as people who simply do not think it fits there project. The truth of the matter is Agile may not work for some projects or with some people. Some of those people are:
+
+- *Developers who do not work on interpersonal skills*
+- *Teams dedicated to fixing issues and bugs*
+- *Developers that only practice code in coding languages and not in plain english*
+- *Teams with projects that are on a huge scale right from the start*
+- *Developers who do not practice iterative software development*
+- *Businesses who prefer keeping the project behind the scenes until release*
+- *Teams that prefer to have a management position over the project*
+- *Developers that prefer to work independently*
+- *Teams that have already invested time into learning a different project management process like Waterfall or Spiral*
+
+Same as the people who use it, these are the most common groups that do not utilize the Agile Process. Many have tried it and realized it was just not the right fit, and many have not tried it but decided that it is the wrong way to approach project management.
+
+**What about you?**
+
+In the end the Agile Process falls into the category of a development tool. It can be beneficial at times, while it can also be detrimental during others. In order to make the most out of this tool you have to learn about it and what is the best way to apply it to your project. Thus the final decision on whether or not Agile is for you, is ironically up to you.
+
+<a name="popularMethods"></a>
+## The Popular Agile Methods
 
 <a name="vocabTerms"></a>
 ## Terms-to-Know
