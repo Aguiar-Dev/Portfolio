@@ -38,19 +38,19 @@ Let's be honest, we all wanna know what makes Agile so enticing? Is it the fact 
 
 All of those are part of the answer, but in truth there's a lot of reasons as to why Agile is enticing and beneficial to individuals and teams. Let's shed some light on the most important benefits of Agile Development:
 
-- Better decision making through regular team meetings and project direction.
+- *Better decision making through regular team meetings and project direction.*
 
-- Cost reductions by keeping both the team and stakeholders up to date, which reduces risks of unsatisfied customers and additional work.
+- *Cost reductions by keeping both the team and stakeholders up to date, which reduces risks of unsatisfied customers and additional work.*
 
-- Transparency between team members, stakeholders, project managers, and all other involved parties.
+- *Transparency between team members, stakeholders, project managers, and all other involved parties.*
 
-- Preparedness for unknown variables by focusing on smaller tasks instead of bigger ones.
+- *Preparedness for unknown variables by focusing on smaller tasks instead of bigger ones.*
 
-- Safer revisions by maintaining regular project meetings and realizing tests through every iteration.
+- *Safer revisions by maintaining regular project meetings and realizing tests through every iteration.*
 
-- Increases overall team satisfaction by splitting projects into smaller tasks which in turn reduce misunderstandings, potential impediments and stressful deadline scenarios.
+- *Increases overall team satisfaction by splitting projects into smaller tasks which in turn reduce misunderstandings, potential impediments and stressful deadline scenarios.*
 
-- Promotes a team environment through which members get to know each others strengths and weaknesses in order to overcome them together.
+- *Promotes a team environment through which members get to know each others strengths and weaknesses in order to overcome them together.*
 
 These are a few of the more important benefits, but the list of benefits is much longer than this. Now that we covered those, you are probably wondering whether it's for you or not?
 
