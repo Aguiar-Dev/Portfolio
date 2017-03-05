@@ -8,7 +8,7 @@
 2. [What is the Agile Process?](#whatIsAgile)
 3. [The Agile Benefits](#benefits)
 4. [Is Agile for You?](#isAgileForYou)
-5. [Key Vocabulary Terms](#vocabTerms)
+5. [Terms-to-Know](#vocabTerms)
 6. [The Popular Agile Frameworks](#popularFrameworks)
 7. [Glossary](./GLOSSARY.md)
 8. [Resources](#resources)
@@ -16,7 +16,7 @@
 <a name="intro"></a>
 ## Introduction
 
-Welcome to the Overview on Agile Development, where most of the confusing and daunting information on Agile Development is made easier to understand. This overview is meant to explain the Agile Movement as a whole and showcase some of the best information on the web regarding Agile. In here you can find the best practices, vocabulary terms, popular frameworks and more on the Agile Movement. In order to best explain Agile I am utilizing multiple sources to collect and redact the most important information, all of these sources can be found in the [Resources Section](#resources).
+Welcome to the Overview on Agile Development, where most of the confusing and daunting information on Agile Development is made easier to understand. This overview is meant to explain the Agile Movement as a whole and showcase some of the best information on the web regarding Agile. In here you can find the best practices, vocabulary terms, popular frameworks and more on the Agile Movement. In order to best explain Agile I am utilizing multiple sources to collect and redact the most important information, all of these sources can be found in the *[Resources Section](#resources)*.
 
 This overview is both a personal and professional project that I undertook in order to better inform both you, the reader, and myself on what Agile is and does. It is not as detailed as other articles or websites, but I tried to make it as informative and helpful as possible. Please keep that in mind whilst going through the information. Thanks for taking the time to read through my overview I hope it helps you better understand the amazing principles of Agile Development.
 
@@ -142,7 +142,7 @@ These terms are used in various Agile frameworks and are crucial to learn when u
 
 - **Velocity -** It is a relative number which describes how much work the team can get done per sprint.
 
-For more on vocabulary terms refer to the [Glossary](./GLOSSARY.md)
+For more on vocabulary terms refer to the *[Glossary](./GLOSSARY.md)*.
 
 <a name="popularFrameworks"></a>
 ## The Popular Agile Frameworks
