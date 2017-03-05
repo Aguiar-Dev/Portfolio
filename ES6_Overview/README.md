@@ -22,6 +22,8 @@ ECMAScript, more commonly referred to ES, is a trademarked scripting-language sp
 
 Being originally based off JavaScript, it became one of the main tools for JavaScript developers. Typically used in client-side scripting for websites and applications on the web, it has become one of the most utilized standards in the industry. Recently it has been picking up more fame by being used to script web based application with NodeJS. Now while many scripting languages like JavaScript aim to be compatible with ES, they all still deliver independent features which are not supported by the standards.
 
+ECMAScript6 is the most recent implementation of ECMAScript standardization also known as the 6th and 7th edition of ECMAScript. It originally released on June 2015 and was the first update to the standards of ECMAScript since 2009. Although this release included many new features, it was still incomplete and was missing browser support at the time. Then an additional release was made in June 2016 that included additional features and was considered the true release of ES6, which by this time ES6 had more substantial browser support.
+
 <a name="resources"></a>
 ## Resources
 
