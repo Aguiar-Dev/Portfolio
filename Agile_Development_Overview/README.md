@@ -8,16 +8,15 @@
 2. [What is the Agile Process?](#whatIsAgile)
 3. [The Agile Benefits](#benefits)
 4. [Is Agile for You?](#isAgileForYou)
-5. [The Popular Agile Methods](#popularMethods)
-6. [Key Vocabulary Terms](#vocabTerms)
-7. [Best Practices in Agile](#bestPractices)
-8. [Glossary](./GLOSSARY.md)
-9. [Resources](#resources)
+5. [Key Vocabulary Terms](#vocabTerms)
+6. [The Popular Agile Frameworks](#popularFrameworks)
+7. [Glossary](./GLOSSARY.md)
+8. [Resources](#resources)
 
 <a name="intro"></a>
 ## Introduction
 
-Welcome to the Overview on Agile Development, where most of the confusing and daunting information on Agile Development is made easier to understand. This overview is meant to explain the Agile Movement as a whole and showcase some of the best information on the web regarding Agile. In here you can find the best practices, vocabulary terms, popular methods and more on the Agile Movement. In order to best explain Agile I am utilizing multiple sources to collect and redact the most important information, all of these sources can be found in the [Resources Section](#resources).
+Welcome to the Overview on Agile Development, where most of the confusing and daunting information on Agile Development is made easier to understand. This overview is meant to explain the Agile Movement as a whole and showcase some of the best information on the web regarding Agile. In here you can find the best practices, vocabulary terms, popular frameworks and more on the Agile Movement. In order to best explain Agile I am utilizing multiple sources to collect and redact the most important information, all of these sources can be found in the [Resources Section](#resources).
 
 This overview is both a personal and professional project that I undertook in order to better inform both you, the reader, and myself on what Agile is and does. It is not as detailed as other articles or websites, but I tried to make it as informative and helpful as possible. Please keep that in mind whilst going through the information. Thanks for taking the time to read through my overview I hope it helps you better understand the amazing principles of Agile Development.
 
@@ -58,7 +57,7 @@ These are a few of the more important benefits, but the list of benefits is much
 <a name="isAgileForYou"></a>
 ## Is Agile for You?
 
-Figuring out whether the Agile Method is for you can be difficult, if not daunting at times. But that is what I am here to do, help you figure out whether or not it is for you. Let's start by jotting down who uses it and who doesn't, then from that you can decide whether it is appropriate for your project or not.
+Figuring out whether the Agile Process is for you can be difficult, if not daunting at times. But that is what I am here to do, help you figure out whether or not it is for you. Let's start by jotting down who uses it and who doesn't, then from that you can decide whether it is appropriate for your project or not.
 
 **Who uses the Agile Process?**
 
@@ -96,13 +95,10 @@ Same as the people who use it, these are the most common groups that do not util
 
 In the end the Agile Process falls into the category of a development tool. It can be beneficial at times, while it can also be detrimental during others. In order to make the most out of this tool you have to learn about it and what is the best way to apply it to your project. Thus the final decision on whether or not Agile is for you, is ironically up to you.
 
-<a name="popularMethods"></a>
-## The Popular Agile Methods
-
 <a name="vocabTerms"></a>
 ## Terms-to-Know
 
-These terms are used in various Agile frameworks and are crucial to learn when undertaking an Agile approach in a project or task. Most of these terms or practices are used in all Agile frameworks, but some are specific to one framework. Once they are learned you are a step closer to being a professional Agile Developer.
+These terms are used in various Agile frameworks and are crucial to learn when undertaking an Agile approach in a project or task. Most of these terms or practices are used in all Agile frameworks, but some are specific to one framework. Once they are learned you are a step closer to being a professional Agile Developer and understanding every Agile Process.
 
 - **Agile Software Management -** The project management approach of developing increments of software in frequent iterations based on evolving requirements.
 
@@ -148,11 +144,72 @@ These terms are used in various Agile frameworks and are crucial to learn when u
 
 For more on vocabulary terms refer to the [Glossary](./GLOSSARY.md)
 
-<a name="bestPractices"></a>
-## Best Practices in Agile
+<a name="popularFrameworks"></a>
+## The Popular Agile Frameworks
+
+Remember at the beginning when I mentioned how Agile was a collection of principles and rules set to increase productivity and decrease risks. Well how do we turn these principles and rules into a system that we can follow? Not to worry there are many frameworks of Agile in which these rules and principles are set in motion for project teams to use.
+
+In order to learn about these from an overview point of view I will cover some of the more popular frameworks by giving you some context behind how they work and can be applied to projects.
+
+### The Scrum Way
+
+Scrum is the most widely used agile framework, which implements incremental product development by using one or more cross-functional, self-organizing teams of about seven people each. It provides a structure of roles, meetings, rules and artifacts. Scrum uses fixed iterations of time commonly referred to as sprints, during which teams tackle story points for their project goals.
+
+Each team is responsible for providing potential deliverables at the end of each sprint, which typically lasts anywhere between one weeks to one month. During this sprints Scrum Teams hold various meetings in order to keep all team members updated on all progress, impediments, accomplishments and tasks.
+
+Each teams can have multiple roles, but they all have one specific Scrum Master, which is not a manager, but a leader and coach for the rest of the team. The Scrum Master is held responsible for keeping the team on track and making sure that all team members know their respective roles and tasks.
+
+The Scrum approach is more transparent than most frameworks where the team is in constant communication with the product owner and stakeholders. This allows the team to maintain clear sight on the direction of the project and also reduce the risk of customer unsatisfaction.
+
+The Scrum Way allows for a hands on approach to software development in which the team is prepared for unpredictability and allows for evolution of the original project. This is why it is the most commonly used framework for Agile.
+
+### Visually Driven with Kanban
+
+Kanban is Japanese for "visual sign" or "card", which makes understanding this framework all the more easier. Originally practiced by Toyota line-workers in the manufacturing process to facilitate communication between team members. Now it is used by multiple companies due to its visual workflow.
+
+Teams using Kanban rely more on their eyes to keep track of their progress than most other teams. Kanban takes advantage of the human brains power of visual processing by having teams create a visual representation of their workload. By visual representation I mean a whiteboard full of color and eye candy. Teams respond more effectively to a visual representation in which the work to be done is outlined by category and importance.
+
+Kanban promotes work-in-progress(WIP) principles to help teams analyze future work and estimate how long it would take. This approach also helps reduce the risk of impediments in the project workflow. With this workflow teams focus on one single piece of work rather than a backlog of tasks.
+
+When Kanban is in full motion it is very flexible and allows for changes at any time during the project. Therefore it is the perfect framework if your project is constantly changing tracks and you want to create a more interactive team dynamic.
+
+### Gain XP through Extreme Programming
+
+Extreme Programming(XP) is a unique agile framework which strongly emphasizes customer satisfaction and team collaboration more than anything. In Extreme Programming teamwork is crucial, thus the project team is composed of the developers, managers and customers in order to work collaboratively. XP has five distinct improvement which are employed into its workflow: communication, simplicity, feedback, respect, and courage.
+
+Extreme Programmers value communication with their customers and team members the most. The XP teams always tend to maintain their workload as simple as possible in order to avoid risks and impediments. The team receives feedback on their work from day one and throughout the entirety of the project. By maintaining such a strong sense of teamwork XP creates a more satisfying process through which all team members can benefit.
+
+Although XP stands for Extreme Programming and it sounds as if it was complex, it actually follows a simple set of rules. These rules are divided into different categories to which they pertain, those categories are: planning, managing, coding, designing and testing. When practicing the XP approach of Agile it can be a mix of methods and practices at first, but when the rules are used accordingly it begins to form in XP.
+
+XP in many ways resembles Scrum, but in they are different frameworks with their own subset of rules and methods. Many teams prefer the XP route where they have to learn it themselves and adapt it to their project in order to get the full benefits. In a way you could say you gain more experience as a developer and as a team when practicing XP.
 
 <a name="resources"></a>
 ## Resources
+
+**Agile Information**
+
+- [Guide to Implementing Agile](https://www.airpair.com/agile/posts/guide-to-implementing-agile#4-the-magic-of-agile)
+
+- [Beginners Guide to the Agile Method](http://linchpinseo.com/the-agile-method/)
+
+- [Agile in a Nutshell](http://www.agilenutshell.com/)
+
+- [The Agile Methodology](http://agilemethodology.org/)
+
+**Agile Frameworks**
+
+- [Scrum Overview for Agile Development](http://www.mountaingoatsoftware.com/agile/scrum/resources/overview)
+
+- [Scrum Reference Card](https://www.collab.net/sites/default/files/uploads/CollabNet_scrumreferencecard.pdf)
+
+- [What is Kanban?](https://leankit.com/learn/kanban/what-is-kanban/)
+
+- [Kanban vs. Scrum](https://www.versionone.com/what-is-kanban/)
+
+- [Gentle Introduction to XP](http://www.extremeprogramming.org/)
+
+- [Scrum vs XP](https://www.mountaingoatsoftware.com/blog/differences-between-scrum-and-extreme-programming)
+
 
 **Vocabulary Resources:**
 
