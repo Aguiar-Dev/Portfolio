@@ -6,6 +6,7 @@
 
 1. [Introduction](#intro)
 2. [What is ECMAScript?](#whatIsECMA)
+3. [Resources](#resources)
 
 <a name="intro"></a>
 ## Introduction
@@ -20,3 +21,16 @@ I sincerely hope that this Overview can help shed some light on the ES6 features
 ECMAScript, more commonly referred to ES, is a trademarked scripting-language specification standardized by Ecma International. But it was developed originally by Brendan Eich of Netscape under the name of Mocha, which was later changed to LiveScript and then finally JavaScript. It was announced in December 1995 and was subsequently released in March 1996 as Netscape Navigator, featuring support for JavaScript. Netscape eventually delivered JavaScript to Ecma International for standardization and this is where ECMAScript was born.
 
 Being originally based off JavaScript, it became one of the main tools for JavaScript developers. Typically used in client-side scripting for websites and applications on the web, it has become one of the most utilized standards in the industry. Recently it has been picking up more fame by being used to script web based application with NodeJS. Now while many scripting languages like JavaScript aim to be compatible with ES, they all still deliver independent features which are not supported by the standards.
+
+<a name="resources"></a>
+## Resources
+
+**ECMAScript Information**
+
+- [ECMAScript Wikipedia](https://en.wikipedia.org/wiki/ECMAScript)
+
+- [What is ECMAScript?](http://stackoverflow.com/questions/4269150/what-is-ecmascript)
+
+- [JavaScript: What is ECMAScript?](http://www.programmerinterview.com/index.php/javascript/javascript-what-is-ecmascript/)
+
+**ES6 Features**
