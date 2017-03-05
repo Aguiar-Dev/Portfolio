@@ -11,7 +11,7 @@ The final purpose of this project is to better display my experience and knowled
 - [Stacker Game](./Stacker_Game/)
 - [Javascript Duel](./Javascript_Duel/)
 - [Agile Development Overview](./Agile_Development_Overview/)
-- ES6 Overview and Guide
+- [ES6 Overview and Guide](./ES6_Overview/)
 
 ## Contact Me
 
