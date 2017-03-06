@@ -209,6 +209,47 @@
   // Pass in parameters using the spread prefix of `...`, the function will display 5 items ordered
   console.log(orderLength(...foods));
 
+  /********** Sets **********/
+  /*
+    Common Methods:
+      set.size      // returns the size of the set
+      set.entries() // returns entries in the set
+      set.keys()    // returns set keywords
+      set.values()  // returns set values
+
+    Manipulation Methods:
+      set.has(value) // boolean returned
+      set.add(value)
+      set.delete(value)
+  */
+  // Create a new set with some names
+  let set = new Set(['Joe', 'Sean', 'Ed', 'Chris']);
+  console.log(set);
+  // Add new items to the set
+  set.add('Liu');
+
+  // Delete items from the set
+  set.delete('Sean');
+
+  // Check for both true and false returns
+  console.log(`The set has Liu: ${set.has('Liu')}`);
+  console.log(`The set has Sean: ${set.has('Sean')}`);
+
+  // Check for the set size
+  console.log(`The set has ${set.size} names`);
+
+  // Display all keys, values and entries
+  for(let value of set.keys()) {
+    console.log(value);
+  }
+  for(let value of set.values()) {
+    console.log(value);
+  }
+  for(let value of set.entries()) {
+    console.log(value);
+  }
+
+
 
 
 
