@@ -19,6 +19,7 @@
   - [Rest and Spread](#restSpread)
   - [Sets](#sets)
   - [Promises](#promises)
+  - [Maps](#maps)
 3. [Resources](#resources)
 
 <a name="intro"></a>
@@ -376,6 +377,57 @@ let displayMsg = () => {
 
 // run function and catch the promise
 returnPromise().then(displayMsg);
+```
+
+<a name="maps"></a>
+### Maps
+
+Maps are very much like sets, except they are made to explicitly work with key/value pairings. They substitute objects and also have the ability to have any value as a key.
+
+```JavaScript
+/*
+  Common Methods:
+    map.size      // returns the size of the map
+    map.entries() // returns entries in the map
+    map.keys()    // returns map keywords
+    map.values()  // returns map values
+
+  Manipulation Methods:
+    map.has(key) // boolean returned
+    map.set(key, value)
+    map.get(key) // returns value
+    map.delete(key)
+*/
+// Creating a base map for use
+let map = new Map();
+
+// Setting map pairings
+map.set('Teacher', 'Edward');
+map.set('Student', 'Sean');
+map.set('Mascot', 'Chelsey');
+
+// Set random values as keys
+map.set(true, 'boolean');
+map.set(new Date(), 'Date');
+
+// Deleting a pairing only requires the key name
+map.delete('Student');
+
+// Display information on the map
+console.log(`The map contains ${map.size} pairings`);
+console.log(`The map has a Mascot: ${map.has('Mascot')}`);
+console.log(`The map has a Student: ${map.has('Student')}`);
+
+// Display all keys, values and pairings
+for(let value of map.keys()) {
+  console.log(value);
+}
+for(let value of map.values()) {
+  console.log(value);
+}
+for(let value of map.entries()) {
+  console.log(value);
+}
 ```
 
 <a name="resources"></a>
