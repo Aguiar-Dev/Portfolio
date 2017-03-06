@@ -44,7 +44,7 @@ ECMAScript6 is the most recent implementation of ECMAScript standardization also
 
 For testing purposes I have included a *[features.js](./features.js)* file in which all example code is compiled and implemented in a self-executing function. If interested in testing and toying around with the features covered in this overview follow these steps:
 
-1. First make sure to clone the original repository for the overview by running `git clone TBD` on your terminal.
+1. First make sure to clone the original repository for the overview by running `git clone https://github.com/FernandoAguiarGuevarez/ES6_Overview.git` on your terminal.
 
 2. Once the repository has been cloned add a new file to the project root folder. It can be called whaterver you would like to call it, but make sure it is an HTML file. (Ex. `blank.html`)
 
