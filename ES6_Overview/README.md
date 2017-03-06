@@ -7,8 +7,8 @@
 1. [Introduction](#intro)
 2. [What is ECMAScript?](#whatIsECMA)
 3. [ES6 Features](#es6Features)
-  - [Keyword: Let](#let)
-  - [Keyword: Const](#const)
+  - [Let](#let)
+  - [Const](#const)
   - [Arrow Functions](#arrowFunction)
   - [Template Strings](#templateStrings)
   - [Classes](#classes)
@@ -37,7 +37,7 @@ ECMAScript6 is the most recent implementation of ECMAScript standardization also
 Here I will outline all of the Features in ES6 Standards that can be applied in JavaScript. Each Feature will be defined and then shown an example code snippet. For more information on the feature refer to the *[features.js file](./features.js)*.
 
 <a name="let"></a>
-### Keyword: Let
+### Let
 
 Declares a local variable in the block scope. The Let keyword can only be used within the scope it was declared, unless it is returned.
 
@@ -64,7 +64,7 @@ console.log(o);
 ```
 
 <a name="const"></a>
-### Keyword: Const
+### Const
 
 A const or constant declaration is where once the variable is set it cannot be changed.
 
@@ -178,6 +178,44 @@ let displayMessage = (message="No message was passed.") => {
 displayMessage(); // Displays default
 displayMessage('Hello World!'); // Displays custom message
 ```
+
+<a name=""></a>
+### Destructuring Assignment
+
+Destructuring Assignment is a simple and effective way to extract values from arrays and objects without complicated logic.
+
+```Javascript
+// Declare some objects and arrays for use in the example
+let student = {
+  firstName: 'Chelsey',
+  lastName: 'Cossifos',
+  profession: 'Web Designer and Developer'
+};
+let cats = ['Thor', 'Odin', 'Loki'];
+
+// Set variables equal to object and array values using Destructuring
+// for arrays the naming convention goes in order
+let [cat1, cat2, cat3] = cats;
+// if you just need to access the values fast then do this
+let {firstName, lastName} = student;
+// if you want to name them something else do this
+let {firstName: first, lastName: last, profession: prof} = student;
+
+// Display extracted values
+console.log(cat1 + ' is ' + cat2 + ' and ' + cat3 + ' brother.');
+console.log(firstName + ' ' + lastName);
+console.log(first + ' ' + last + ' is a ' + prof);
+
+// Destructuring is also useful to only return certain properties of an object from functions
+let getName = ({firstName: first, lastName: last}) => {
+  // will only return the parameters that were set
+  return first + ' ' + last;
+};
+
+// Display student Name
+console.log(getName(student));
+```
+
 
 
 <a name="resources"></a>

@@ -105,9 +105,36 @@
   displayMessage(); // Displays default
   displayMessage('Hello World!'); // Displays custom message
 
+  /********** Destructuring Assignment **********/
+  // Declare some objects and arrays for use in the example
+  let student = {
+    firstName: 'Chelsey',
+    lastName: 'Cossifos',
+    profession: 'Web Designer and Developer'
+  };
+  let cats = ['Thor', 'Odin', 'Loki'];
 
+  // Set variables equal to object and array values using Destructuring
+  // for arrays the naming convention goes in order
+  let [cat1, cat2, cat3] = cats;
+  // if you just need to access the values fast then do this
+  let {firstName, lastName} = student;
+  // if you want to name them something else do this
+  let {firstName: first, lastName: last, profession: prof} = student;
 
+  // Display extracted values
+  console.log(cat1 + ' is ' + cat2 + ' and ' + cat3 + ' brother.');
+  console.log(firstName + ' ' + lastName);
+  console.log(first + ' ' + last + ' is a ' + prof);
 
+  // Destructuring is also useful to only return certain properties of an object from functions
+  let getName = ({firstName: first, lastName: last}) => {
+    // will only return the parameters that were set
+    return first + ' ' + last;
+  };
+
+  // Display student Name
+  console.log(getName(student));
 
 
 
