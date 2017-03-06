@@ -15,6 +15,8 @@
   - [Default Parameter](#defaultParameter)
   - [Destructuring Assignments](#destructuring)
   - [Inheritance](#inheritance)
+  - [Object Literals](#objectLiterals)
+  - [Rest and Spread](#restSpread)
 3. [Resources](#resources)
 
 <a name="intro"></a>
@@ -287,6 +289,25 @@ let newDog = createDog('Fido', 'Golden Terrier', 4);
 // display object literal information
 console.log(`${newDog.name} is a ${newDog.breed} that is ${newDog.age} years old`);
 ```
+
+<a name="restSpread"></a>
+### Rest and Spread
+
+With the `rest` parameter you can easily extract the remaining arguments into one single parameter. With the `spread` prefix we can extend variables in order to pass in full arrays without having to call individual items.
+
+```JavaScript
+// Declare an array for use in a function for a more complex example
+// the parameter `...food` is the rest parameter
+let foods = ['fries', 'sandwich', 'soda', 'ice cream', 'peppermint'];
+let orderLength = (...food) => {
+  // display length of array with ...
+  return `${food.length} items ordered.`;
+};
+
+// Pass in parameters using the spread prefix of `...`, the function will display 5 items ordered
+console.log(orderLength(...foods));
+```
+
 
 <a name="resources"></a>
 ## Resources

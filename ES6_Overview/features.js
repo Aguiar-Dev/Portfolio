@@ -197,6 +197,17 @@
   // display object literal information
   console.log(`${newDog.name} is a ${newDog.breed} that is ${newDog.age} years old`);
 
+  /********** Rest Parameter **********/
+  // Declare an array for use in a function for a more complex example
+  // the parameter `...food` is the rest parameter
+  let foods = ['fries', 'sandwich', 'soda', 'ice cream', 'peppermint'];
+  let orderLength = (...food) => {
+    // display length of array with ...
+    return `${food.length} items ordered.`;
+  };
+
+  // Pass in parameters using the spread prefix of `...`, the function will display 5 items ordered
+  console.log(orderLength(...foods));
 
 
 
