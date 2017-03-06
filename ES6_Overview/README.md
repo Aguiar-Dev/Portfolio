@@ -18,6 +18,7 @@
   - [Object Literals](#objectLiterals)
   - [Rest and Spread](#restSpread)
   - [Sets](#sets)
+  - [Promises](#promises)
 3. [Resources](#resources)
 
 <a name="intro"></a>
@@ -39,7 +40,7 @@ ECMAScript6 is the most recent implementation of ECMAScript standardization also
 <a name="es6Features"></a>
 ## ES6 Features
 
-Here I will outline all of the Features in ES6 Standards that can be applied in JavaScript. Each Feature will be defined and then shown an example code snippet. For more information on the feature refer to the *[features.js file](./features.js)*.
+Here I will outline all of the popular features in ES6 Standards that can be applied in JavaScript. Each Feature will be defined and then shown an example code snippet. For all feature example code refer to the *[features.js file](./features.js)*.
 
 <a name="let"></a>
 ### Let
@@ -355,7 +356,27 @@ for(let value of set.entries()) {
 }
 ```
 
+<a name="promises"></a>
+### Promises
 
+With ES6 comes the long awaited addition of support for Promises. With Promises you can define values and functionality to be done when a code block is finished running.
+
+```JavaScript
+// Creating a function to return a promise after a second passes
+let returnPromise = () => {
+  return new Promise((res, rej) => {
+    setTimeout(res, 1000);
+  });
+};
+
+// Creating a function to run once promise is returned
+let displayMsg = () => {
+  console.log('Promise returned successfully');
+};
+
+// run function and catch the promise
+returnPromise().then(displayMsg);
+```
 
 <a name="resources"></a>
 ## Resources

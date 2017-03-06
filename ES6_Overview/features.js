@@ -249,11 +249,21 @@
     console.log(value);
   }
 
+  /********** Promises **********/
+  // Creating a function to return a promise after a second passes
+  let returnPromise = () => {
+    return new Promise((res, rej) => {
+      setTimeout(res, 1000);
+    });
+  };
 
+  // Creating a function to run once promise is returned
+  let displayMsg = () => {
+    console.log('Promise returned successfully');
+  };
 
-
-
-
+  // run function and catch the promise
+  returnPromise().then(displayMsg);
 
 
 })();
