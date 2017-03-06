@@ -13,6 +13,8 @@
   - [Template Strings](#templateStrings)
   - [Classes](#classes)
   - [Default Parameter](#defaultParameter)
+  - [Destructuring Assignments](#destructuring)
+  - [Inheritance](#inheritance)
 3. [Resources](#resources)
 
 <a name="intro"></a>
@@ -179,7 +181,7 @@ displayMessage(); // Displays default
 displayMessage('Hello World!'); // Displays custom message
 ```
 
-<a name=""></a>
+<a name="destructuring"></a>
 ### Destructuring Assignment
 
 Destructuring Assignment is a simple and effective way to extract values from arrays and objects without complicated logic.
@@ -215,6 +217,55 @@ let getName = ({firstName: first, lastName: last}) => {
 // Display student Name
 console.log(getName(student));
 ```
+
+<a name="inheritance"></a>
+### Inheritance
+
+Inheritance has been simplified with the addition of the extends and super keywords. This helps create a more intuitive, object oriented programming style and boilerplate-free inheritance.
+
+```JavaScript
+// Creating a simple class for inheritance purposes
+class Vehicle{
+  constructor(make, model, year){
+    this.make = make;
+    this.model = model;
+    this.year = year;
+  }
+
+  drive(){
+    console.log('You are driving a ' + this.make + ' ' + this.model);
+  }
+}
+
+// Creating two different extensions of the parent class
+// one for cars
+class Car extends Vehicle {
+  constructor(make, model, year, type){
+    super(make, model, year);
+    this.type = type;
+  }
+}
+// one for bikes
+class Bike extends Vehicle {
+  constructor(make, model, year, condition) {
+    super(make, model, year);
+    this.condition = condition;
+  }
+
+  wheelie(){
+    console.log('You pop a wheelie with your ' + this.year + ' ' + this.model + '. It si still in ' + this.condition + ' condition.');
+  }
+}
+
+// construct some examples
+let mustang = new Car('Ford', 'Mustang', '2010', 'Convertible');
+let fz = new Bike('Yamaha', 'FZ-09', '2017', 'Very Good');
+
+// display new classes constructed by running methods
+mustang.drive();
+fz.wheelie();
+```
+
 
 
 

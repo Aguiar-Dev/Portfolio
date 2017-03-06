@@ -117,8 +117,10 @@
   // Set variables equal to object and array values using Destructuring
   // for arrays the naming convention goes in order
   let [cat1, cat2, cat3] = cats;
+
   // if you just need to access the values fast then do this
   let {firstName, lastName} = student;
+
   // if you want to name them something else do this
   let {firstName: first, lastName: last, profession: prof} = student;
 
@@ -135,6 +137,49 @@
 
   // Display student Name
   console.log(getName(student));
+
+  /********** Inheritance **********/
+  // Creating a simple class for inheritance purposes
+  class Vehicle{
+    constructor(make, model, year){
+      this.make = make;
+      this.model = model;
+      this.year = year;
+    }
+
+    drive(){
+      console.log('You are driving a ' + this.make + ' ' + this.model);
+    }
+  }
+
+  // Creating two different extensions of the parent class
+  // one for cars
+  class Car extends Vehicle {
+    constructor(make, model, year, type){
+      super(make, model, year);
+      this.type = type;
+    }
+  }
+  // one for bikes
+  class Bike extends Vehicle {
+    constructor(make, model, year, condition) {
+      super(make, model, year);
+      this.condition = condition;
+    }
+
+    wheelie(){
+      console.log('You pop a wheelie with your ' + this.year + ' ' + this.model + '. It si still in ' + this.condition + ' condition.');
+    }
+  }
+
+  // construct some examples
+  let mustang = new Car('Ford', 'Mustang', '2010', 'Convertible');
+  let fz = new Bike('Yamaha', 'FZ-09', '2017', 'Very Good');
+
+  // display new classes constructed by running methods
+  mustang.drive();
+  fz.wheelie();
+
 
 
 
