@@ -266,8 +266,27 @@ mustang.drive();
 fz.wheelie();
 ```
 
+<a name="objectLiterals"></a>
+### Object Literals
 
+With ES6 comes the ability to do shorthand when creating object literals. This allows for easier creation of objects and more concise code blocks.
 
+```JavaScript
+// Creating a function to make object Literals
+let createDog = (name, breed, age) => {
+  return{
+    name,
+    breed,
+    age
+  };
+};
+
+// make a new object with the function
+let newDog = createDog('Fido', 'Golden Terrier', 4);
+
+// display object literal information
+console.log(`${newDog.name} is a ${newDog.breed} that is ${newDog.age} years old`);
+```
 
 <a name="resources"></a>
 ## Resources

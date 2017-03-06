@@ -8,7 +8,7 @@
 /*jshint esversion: 6 */
 (function(){
 
-  /********** Keyword: Let **********/
+  /********** Let **********/
   // ES6 Standards
   // Define lets
   let v = 'value';
@@ -30,7 +30,7 @@
   console.log(a);
   console.log(o);
 
-  /********** Keyword: Const **********/
+  /********** Const **********/
   // Define constants
   const dog = 'Kaii';
   const cat = {name: 'Odin', age: 1};
@@ -47,9 +47,9 @@
   let s = 'Sauce';
 
   // create inline function to join the t and s lets
-  let tomatoSauce = (t, s) => t + ' ' + s;
+  let tomatoSauce = (t, s) => `${t} ${s}`;
   // For single parameter functions it isn't neccessary to include parenthesis
-  let tomatoParty = t => t + ' Party';
+  let tomatoParty = t => `${t} Party`;
 
   // Display the results
   console.log(tomatoSauce(t, s));
@@ -84,7 +84,7 @@
       console.log('Woof! Woof!');
     }
     speak() {
-      console.log('Hi! My name is ' + this.name + '. I am ' + this.age + ' years old.');
+      console.log(`Hi! My name is ${this.name}. I am ${this.age} years old.`);
     }
   }
 
@@ -125,14 +125,14 @@
   let {firstName: first, lastName: last, profession: prof} = student;
 
   // Display extracted values
-  console.log(cat1 + ' is ' + cat2 + ' and ' + cat3 + ' brother.');
-  console.log(firstName + ' ' + lastName);
-  console.log(first + ' ' + last + ' is a ' + prof);
+  console.log(`${cat1} is ${cat2} and ${cat3} brother.`);
+  console.log(`${firstName} ${lastName}`);
+  console.log(`${first} ${last} is a ${prof}`);
 
   // Destructuring is also useful to only return certain properties of an object from functions
   let getName = ({firstName: first, lastName: last}) => {
     // will only return the parameters that were set
-    return first + ' ' + last;
+    return `${first} ${last}`;
   };
 
   // Display student Name
@@ -148,7 +148,7 @@
     }
 
     drive(){
-      console.log('You are driving a ' + this.make + ' ' + this.model);
+      console.log(`You are driving a ${this.make} ${this.model}.`);
     }
   }
 
@@ -168,7 +168,7 @@
     }
 
     wheelie(){
-      console.log('You pop a wheelie with your ' + this.year + ' ' + this.model + '. It si still in ' + this.condition + ' condition.');
+      console.log(`You pop a wheelie with your ${this.year} ${this.model}. It is still in ${this.condition} condition.`);
     }
   }
 
@@ -177,10 +177,25 @@
   let fz = new Bike('Yamaha', 'FZ-09', '2017', 'Very Good');
 
   // display new classes constructed by running methods
+  // will display corresponding messages with the new object properties
   mustang.drive();
   fz.wheelie();
 
+  /********** Object Literals **********/
+  // Creating a function to make object Literals
+  let createDog = (name, breed, age) => {
+    return{
+      name,
+      breed,
+      age
+    };
+  };
 
+  // make a new object with the function
+  let newDog = createDog('Fido', 'Golden Terrier', 4);
+
+  // display object literal information
+  console.log(`${newDog.name} is a ${newDog.breed} that is ${newDog.age} years old`);
 
 
 
