@@ -6,7 +6,8 @@
 
 1. [Introduction](#intro)
 2. [What is ECMAScript?](#whatIsECMA)
-3. [ES6 Features](#es6Features)
+3. [Testable File](#testing)
+4. [ES6 Features](#es6Features)
   - [Let](#let)
   - [Const](#const)
   - [Arrow Functions](#arrowFunction)
@@ -20,7 +21,7 @@
   - [Sets](#sets)
   - [Promises](#promises)
   - [Maps](#maps)
-3. [Resources](#resources)
+5. [Resources](#resources)
 
 <a name="intro"></a>
 ## Introduction
@@ -37,6 +38,19 @@ ECMAScript, more commonly referred to ES, is a trademarked scripting-language sp
 Being originally based off JavaScript, it became one of the main tools for JavaScript developers. Typically used in client-side scripting for websites and applications on the web, it has become one of the most utilized standards in the industry. Recently it has been picking up more fame by being used to script web based application with NodeJS. Now while many scripting languages like JavaScript aim to be compatible with ES, they all still deliver independent features which are not supported by the standards.
 
 ECMAScript6 is the most recent implementation of ECMAScript standardization also known as the 6th and 7th edition of ECMAScript. It originally released on June 2015 and was the first update to the standards of ECMAScript since 2009. Although this release included many new features, it was still incomplete and was missing browser support at the time. Then an additional release was made in June 2016 that included additional features and was considered the true release of ES6, which by this time ES6 had more substantial browser support.
+
+<a name="testing"></a>
+## Testable File
+
+For testing purposes I have included a *[features.js](./features.js)* file in which all example code is compiled and implemented in a self-executing function. If interested in testing and toying around with the features covered in this overview follow these steps:
+
+1. First make sure to clone the original repository for the overview by running `git clone TBD` on your terminal.
+
+2. Once the repository has been cloned add a new file to the project root folder. It can be called whaterver you would like to call it, but make sure it is an HTML file. (Ex. `blank.html`)
+
+3. Now inside the HTML file you have to add the following line of code to test the features. `<html> <head> <script type = "text/javascript" src = "./features.js"></script></head> </html>`
+
+4. Now you are setup and ready to test these features out yourself. Feel free to change variable names, make changes and test as much as you can in the features.js file.
 
 <a name="es6Features"></a>
 ## ES6 Features
