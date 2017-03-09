@@ -16,42 +16,58 @@ Welcome to my Utility Tool for Node JS. This is a program that I created while w
 <a name="howDoesItWork"></a>
 ## How Does it Work?
 
-Utility Tool functions exactly as it is called, a utility tool for debugging. It allows for custom console.log messages that allow for more input that a typical console.log. By passing in certain parameters you can log information more effectively and allow for full information on errors, bugs or successes. Apart from the logging functionality it includes a debugging functionality for objects, which will check an objects current state and either pass it or fail it. Then the last functionality for this application is a version bumper which will bump the version of a Node JS project in the `package.json` file, useful for whenever a major release of a project comes out..
+Utility Tool functions exactly as it is called, a utility tool for debugging. It allows for custom console.log messages that allow for more input that a typical console.log. By passing in certain parameters you can log information more effectively and allow for full information on errors, bugs or successes. Apart from the logging functionality it includes a debugging functionality for objects, which will check an objects current state and either pass it or fail it. Then the last functionality for this application is a version bumper which will bump the version of a Node JS project in the `package.json` file, useful for whenever a major release of a project comes out.
 
 <a name="setUp"></a>
 ## How to setup
 
 In order to setup the Util tool simply follow these steps:
 
-1. Install the module into your project using `npm install util-tool`
+1. Install the module into your project using:
 
-2. Now that you have the module installed simply require it in your project files by using `var util = require('util-tool')`
+  ```bash
+  npm install util-tool
+  ```
+
+2. Now that you have the module installed simply require it in your project files by using:
+
+  ```javascript
+   var util = require('util-tool')
+   ```
 
 3. In order to use the debugging functionality of the tool you have to run your project in DEBUG mode. Simply turn DEBUG mode on by running `DEBUG=true` whenever you start the server.
 
-4. Enjoy the utility tool ( ^-^)
+4. Enjoy the utility tool ( /^-^)/
 
-The util-tool was tested using Mocha and Chai for the unit testing. But the unit testing is not included in the npm install.
+The util-tool was tested using Mocha and Chai for the unit testing. But the unit testing is not included in the NPM install. For the unit testing files refer to the Github repository.
 
 <a name="methods"></a>
 ## Util Tool Methods
 
 ### Logging
 
-In order to log using the util tool simply remember this format `util.writer(title, data, status, consoleMethod)`.
+In order to log using the util tool simply remember the following format .
+
+```javascript
+util.writer(title, data, status, consoleMethod)
+```
 
 - Title: is the header of the log.
 - Data: is any type of data that you pass in. For logging purposes data is simply a placeholder.
-- Status: is meant to be any piece of information that would benefit the developer. Ex: `Test #3: Successful function`
+- Status: is meant to be any piece of information that would benefit the developer.
+
+  `Ex: Test #3: Successful function`
 - consoleMethod: takes one of the strings in the array based on what kind of console you want ['log', 'warn', 'error'].
 They will console in different colors.
 
-Example Output:
-```
+#### Usage
+```javascript
 util.writer('Testing Log', '', 'Test successful', 'log')
 //Data was passed in as an empty string in order to leave whitespace.
+```
 
-Output:
+#### Output
+```bash
 =================================================
 [2016-06-23T14:48:26-04:00]: Testing Log
 =================================================
@@ -64,12 +80,17 @@ The debugging portion of the tool is meant to discern whether or not data is emp
 
 - Data: is any type of data that you pass in. The util tool was tested with objects, arrays, and strings. When debugging it will check to see if the data was either empty or undefined and log a response accordingly. If the data is correct then it will log successful.
 
-Example Output:
-```
+#### Usage
+
+```javascript
 // Undefined Test
 util.debug()
+```
 
-Output:
+#### Output
+
+```bash
+Undefined Test:
 =================================================
 [2016-06-21T14:29:47-04:00]: Data Check ?
 =================================================
@@ -78,10 +99,8 @@ Data was undefined.
 
 --------------------------------------------------
 
-// Empty Test
-util.debug({})
 
-Output:
+Empty Test:
 =================================================
 [2016-06-21T14:30:41-04:00]: Data Check -
 =================================================
@@ -90,18 +109,15 @@ Data was empty.
 
 --------------------------------------------------
 
-// Successful Test
 util.debug(['array'])
 
-Output:
+Successful Test:
 =================================================
 [2016-06-21T14:30:41-04:00]: Data Check +
 =================================================
  ['array']
 Data was passed correctly.
 ```
-
----
 
 ### Version Bump
 
@@ -110,14 +126,14 @@ This module is good to use with gulp.
 Call this module to increment the version number.
 
 #### Usage
-```javasc
+```javascript
 const util = require('util-tool');
 
 // takes the current version -> (string)  & tag -> (string) ['major', 'minor', 'patch']
 util.versionbump('1.0.0', 'major');
 ```
 #### Returns (string)
-```
+```json
 '2.0.0'
 ```
 
