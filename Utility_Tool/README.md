@@ -74,6 +74,8 @@ util.writer('Testing Log', '', 'Test successful', 'log')
  "" Test successful
 ```
 
+---
+
 ### Debugging
 
 The debugging portion of the tool is meant to discern whether or not data is empty or undefined. Simply write it in this format `util.debug(data)`
@@ -99,7 +101,6 @@ Data was undefined.
 
 --------------------------------------------------
 
-
 Empty Test:
 =================================================
 [2016-06-21T14:30:41-04:00]: Data Check -
@@ -119,6 +120,8 @@ Successful Test:
 Data was passed correctly.
 ```
 
+---
+
 ### Version Bump
 
 This module is good to use with gulp.
@@ -132,6 +135,7 @@ const util = require('util-tool');
 // takes the current version -> (string)  & tag -> (string) ['major', 'minor', 'patch']
 util.versionbump('1.0.0', 'major');
 ```
+
 #### Returns (string)
 ```json
 '2.0.0'
