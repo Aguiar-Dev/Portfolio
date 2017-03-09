@@ -8,10 +8,17 @@
 4. [Utility Tool Methods](#methods)
 5. [Resources](#resources)
 
+<a name="intro"></a>
 ## Introduction
 
 Welcome to my Utility Tool for Node JS. This is a program that I created while working on an assignment for my Deployment of Web Applications course at Full Sail University. It was meant to be both an introduction project to creating NPM packages and also working with debugging tools in Node JS. During the creation of this project I leaned multiple things on how to debug while working on projects, but more than that I learned how to rely on tools for certain aspects of Web Development. Since this was a project done while still in College there will probably be a lot of outdated functionality and practices, but feel free to take a look and contact me about it. Thanks for taking the time to look through my projects.
 
+<a name="howDoesItWork"></a>
+## How Does it Work?
+
+Utility Tool functions exactly as it is called, a utility tool for debugging. It allows for custom console.log messages that allow for more input that a typical console.log. By passing in certain parameters you can log information more effectively and allow for full information on errors, bugs or successes. Apart from the logging functionality it includes a debugging functionality for objects, which will check an objects current state and either pass it or fail it. Then the last functionality for this application is a version bumper which will bump the version of a Node JS project in the `package.json` file, useful for whenever a major release of a project comes out..
+
+<a name="setUp"></a>
 ## How to setup
 
 In order to setup the Util tool simply follow these steps:
@@ -26,10 +33,7 @@ In order to setup the Util tool simply follow these steps:
 
 The util-tool was tested using Mocha and Chai for the unit testing. But the unit testing is not included in the npm install.
 
-**For information on the unit testing check out the files on [GitHub](https://github.com/FernandoAguiarGuevarez/Utility-Tool).**
-
----
-
+<a name="methods"></a>
 ## Util Tool Methods
 
 ### Logging
@@ -116,3 +120,14 @@ util.versionbump('1.0.0', 'major');
 ```
 '2.0.0'
 ```
+
+<a name="resources"></a>
+## Resources
+
+*Link to NPM Page*
+
+- [NPM Utility Tool](https://www.npmjs.com/package/util-tool)
+
+*Other Utility Tools Worth Using*
+
+- [Kutil](https://www.npmjs.com/package/kutil)
