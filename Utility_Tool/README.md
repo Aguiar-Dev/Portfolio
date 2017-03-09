@@ -1,7 +1,16 @@
-# Util-Tool
-Utility Tool in order to debug code. Runs console logs, checks objects in order to see if they are empty or undefined, and provides feedback through terminal. Also uses Mocha & Chai to run tests on itself verifying that it functions properly.
+# Utility Tool
 
----
+## Table of Contents
+
+1. [Introduction](#intro)
+2. [How does it work](#howDoesItWork)
+3. [How to Set Up](#setUp)
+4. [Utility Tool Methods](#methods)
+5. [Resources](#resources)
+
+## Introduction
+
+Welcome to my Utility Tool for Node JS. This is a program that I created while working on an assignment for my Deployment of Web Applications course at Full Sail University. It was meant to be both an introduction project to creating NPM packages and also working with debugging tools in Node JS. During the creation of this project I leaned multiple things on how to debug while working on projects, but more than that I learned how to rely on tools for certain aspects of Web Development. Since this was a project done while still in College there will probably be a lot of outdated functionality and practices, but feel free to take a look and contact me about it. Thanks for taking the time to look through my projects.
 
 ## How to setup
 
