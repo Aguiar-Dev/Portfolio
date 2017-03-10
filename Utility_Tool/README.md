@@ -1,3 +1,5 @@
+*[back to root directory](../../../)*
+
 # Utility Tool
 
 ## Table of Contents
@@ -32,7 +34,7 @@ In order to setup the Util tool simply follow these steps:
 2. Now that you have the module installed simply require it in your project files by using:
 
   ```javascript
-   var util = require('util-tool')
+   const util = require('util-tool')
    ```
 
 3. In order to use the debugging functionality of the tool you have to run your project in DEBUG mode. Simply turn DEBUG mode on by running `DEBUG=true` whenever you start the server.
