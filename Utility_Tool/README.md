@@ -56,12 +56,17 @@ util.writer(title, data, status, consoleMethod)
 - Data: is any type of data that you pass in. For logging purposes data is simply a placeholder.
 - Status: is meant to be any piece of information that would benefit the developer.
 
-  `Ex: Test #3: Successful function`
+  ```
+  Ex: Test #3: Successful function
+  ```
+
 - consoleMethod: takes one of the strings in the array based on what kind of console you want ['log', 'warn', 'error'].
 They will console in different colors.
 
 #### Usage
 ```javascript
+const util = require('util-tool');
+
 util.writer('Testing Log', '', 'Test successful', 'log')
 //Data was passed in as an empty string in order to leave whitespace.
 ```
@@ -78,15 +83,32 @@ util.writer('Testing Log', '', 'Test successful', 'log')
 
 ### Debugging
 
-The debugging portion of the tool is meant to discern whether or not data is empty or undefined. Simply write it in this format `util.debug(data)`
+The debugging portion of the tool is meant to discern whether or not data is empty or undefined. Simply write it in the following format.
+
+```javascript
+util.debug(data)
+```
 
 - Data: is any type of data that you pass in. The util tool was tested with objects, arrays, and strings. When debugging it will check to see if the data was either empty or undefined and log a response accordingly. If the data is correct then it will log successful.
 
 #### Usage
 
 ```javascript
+const util = require('util-tool');
+
 // Undefined Test
 util.debug()
+
+// Empty Test
+util.debug({})
+
+// Successful Test
+let obj = {
+  name: 'Billy Bob'
+}
+
+util.debug(obj);
+
 ```
 
 #### Output
@@ -110,13 +132,11 @@ Data was empty.
 
 --------------------------------------------------
 
-util.debug(['array'])
-
 Successful Test:
 =================================================
 [2016-06-21T14:30:41-04:00]: Data Check +
 =================================================
- ['array']
+ {name: 'Billy Bob'}
 Data was passed correctly.
 ```
 
@@ -124,9 +144,9 @@ Data was passed correctly.
 
 ### Version Bump
 
-This module is good to use with gulp.
+This module is good to use with gulp, since it automates the versioning process when you run gulp.
 
-Call this module to increment the version number.
+Call this module to increment the version number, based on semantic versioning.
 
 #### Usage
 ```javascript
@@ -143,6 +163,10 @@ util.versionbump('1.0.0', 'major');
 
 <a name="resources"></a>
 ## Resources
+
+*Reading Resources*
+
+- [Semantic Versioning](http://semver.org/)
 
 *Link to NPM Page*
 
