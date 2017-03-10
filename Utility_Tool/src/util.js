@@ -1,6 +1,8 @@
+/* jshint esversion: 6 */
 // Setting up all requirements for the tool
 const moment = require('moment');
 const colors = require('colors');
+const Console = console;
 let logstatus;
 
 // Setting local colors theme for the logging
@@ -13,7 +15,7 @@ colors.setTheme({
 });
 
 // The Logging functionality of the utility tool (meant to substitute console.log)
-exports.writer = (title, data, status, consoleMethod) => {
+exports.logger = (title, data, status, consoleMethod) => {
   // Sets up all information to be displayed with colors on console.
   const obj = JSON.stringify(data);
   const now = moment().format();
@@ -21,21 +23,13 @@ exports.writer = (title, data, status, consoleMethod) => {
   const output = seperator + ('[' + now + ']: ').good + title.header + seperator;
 
   if (consoleMethod === 'log') {
-    /* eslint-disable */
-    console.log(output, colors.data(obj), status);
-    /* eslint-enable */
+    Console.log(output, colors.data(obj), status);
   } else if (consoleMethod === 'error') {
-    /* eslint-disable */
-    console.error(output, colors.error(obj), status);
-    /* eslint-enable */
+    Console.error(output, colors.error(obj), status);
   } else if (consoleMethod === 'warn') {
-    /* eslint-disable */
-    console.warn(output, colors.header(obj), status);
-    /* eslint-enable */
+    Console.warn(output, colors.header(obj), status);
   } else {
-    /* eslint-disable */
-    console.error(colors.error('You have passed a invalid method'));
-    /* eslint-enable */
+    Console.error(colors.error('You have passed a invalid method'));
   }
 };
 
