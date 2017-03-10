@@ -1,4 +1,4 @@
-<p align="center">![Brand Image](./img/logo.png)</p>
+![Brand Image](./img/logo.png)
 
 # Portfolio Project
 
