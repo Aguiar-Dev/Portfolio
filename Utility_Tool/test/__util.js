@@ -1,5 +1,6 @@
 /* global beforeEach:true afterEach:true */
 /* eslint no-undef: "error" */
+/* jshint esversion: 6 */
 
 // Unit Test Dependancies and Requires
 const chai = require('chai');
@@ -14,7 +15,7 @@ let call;
 describe('Utility Tool Testing', () => {
   // Before Each Test run...
   beforeEach(() => {
-    call = sinon.spy(util, 'writer');
+    call = sinon.spy(util, 'logger');
   });
   // After Each Test run...
   afterEach(() => {
@@ -23,8 +24,8 @@ describe('Utility Tool Testing', () => {
 
   // Test for empty objects through debug
   it('| Should console log data was empty object', (done) => {
-    // Passing in empty array (can be empty object as well)
-    util.debug([]);
+    // Passing in empty object (can be empty array as well)
+    util.debug({});
     expect(call.args[0][2]).to.contain('Data was empty.');
     done();
   }); // end empty test
