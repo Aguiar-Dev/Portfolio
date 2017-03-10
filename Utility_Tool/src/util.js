@@ -33,37 +33,35 @@ exports.logger = (title, data, status, consoleMethod) => {
   }
 };
 
-// The Dubugging functionality
+// The Debugging functionality
 // checks either empty, undefined, or correct formatting
 exports.debug = (data) => {
   // setting up local variables
   let info;
   let passing = true;
-  if (process.env.DEBUG) {
-    // Check if data passed is undefined or not
-    if (data !== undefined) {
-      // if Checks if data passed is empty / Else if checks for data in the correct format
-      if (Object.keys(data).length === 0 || data.length === 0) {
-        passing = true;
-      } else if (Object.keys(data).length > 0 || data.length > 0) {
-        passing = false;
-      } // end if/else
-    } else {
-      // Setting up the undefined data response
-      logstatus = '\nData was undefined.\n';
-      this.writer('Data Check ?', data, logstatus.error, 'error');
-      return null;
+  // Check if data passed is undefined or not
+  if (data !== undefined) {
+    // if checks data passed in empty / else if checks data is in the correct format
+    if (Object.keys(data).length === 0 || data.length === 0) {
+      passing = true;
+    } else if (Object.keys(data).length > 0 || data.length > 0) {
+      passing = false;
     } // end if/else
+  } else {
+    // Setting up the undefined data response
+    logstatus = '\nData was undefined.\n';
+    this.logger('Data Check ?', data, logstatus.error, 'error');
+    return null;
+  } // end if/else
 
-    // Sets up the response for either empty or correct data
-    if (passing === true) {
-      logstatus = '\nData was empty.\n';
-      info = this.writer('Data Check -', data, logstatus.error, 'error');
-    } else {
-      logstatus = '\nData was passed correctly.\n';
-      info = this.writer('Data Check +', data, logstatus.good, 'log');
-    } // end if/else
-  }
+  // Sets up the response for either empty or correct data
+  if (passing === true) {
+    logstatus = '\nData was empty.\n';
+    info = this.logger('Data Check -', data, logstatus.error, 'error');
+  } else {
+    logstatus = '\nData was passed correctly.\n';
+    info = this.logger('Data Check +', data, logstatus.good, 'log');
+  } // end if/else
   return info;
 };
 
