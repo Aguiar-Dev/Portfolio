@@ -11,7 +11,6 @@
   - [Installing Sass](#install)
   - [Sass Applications](#applications)
   - [Sass Folder Structure](#folderStructure)
-  - [Test Project Setup](#setup)
 - [SASS Features](#sassFeatures)
   - [Variables](#vars)
   - [Nesting](#nests)
@@ -95,14 +94,80 @@ Sass 3.4.22 (Selective Steve)
 <a name="applications"></a>
 ### Sass Applications
 
+The following are the different applications that can be used to get up and running with Sass. Most of them are free, but keep in mind some require payment.
+
+- [CodeKit](http://incident57.com/codekit/)
+- [Compass.app](http://compass.handlino.com/)
+- [Ghostlab](http://www.vanamco.com/ghostlab/)
+- [Hammer](http://hammerformac.com/)
+- [Koala](http://koala-app.com/)
+- [LiveReload](http://livereload.com/)
+- [Prepros](https://prepros.io/)
+- [Scout](http://mhs.github.io/scout-app/)
+
 
 <a name="folderStructure"></a>
 ### Sass Folder Structure
 
+Although Folder structure is purely up to the developer that is making the application, I wanted to showcase one of the folder structures that seemed to be most popular for Sass.
 
-<a name="setup"></a>
-### Test Project Setup
+```text
+stylesheets/
+|
+|-- modules/              # Common modules
+|   |-- _all.scss         # Include to get all modules
+|   |-- _utility.scss     # Module name
+|   |-- _colors.scss      # Etc...
+|   ...
+|
+|-- partials/             # Partials
+|   |-- _base.sass        # imports for all mixins + global project variables
+|   |-- _buttons.scss     # buttons
+|   |-- _figures.scss     # figures
+|   |-- _grids.scss       # grids
+|   |-- _typography.scss  # typography
+|   |-- _reset.scss       # reset
+|   ...
+|
+|-- vendor/               # CSS or Sass from other projects
+|   |-- _colorpicker.scss
+|   |-- _jquery.ui.core.scss
+|   ...
+|
+`-- main.scss            # primary Sass file
+```
 
+An additional step can be taken for projects that are composed of multiple sub-projects.
+
+```text
+stylesheets/
+|
+|-- admin/           # Admin sub-project
+|   |-- modules/
+|   |-- partials/
+|   `-- _base.scss
+|
+|-- account/         # Account sub-project
+|   |-- modules/
+|   |-- partials/
+|   `-- _base.scss
+|
+|-- site/            # Site sub-project
+|   |-- modules/
+|   |-- partials/
+|   `-- _base.scss
+|
+|-- vendor/          # CSS or Sass from other projects
+|   |-- _colorpicker-1.1.scss
+|   |-- _jquery.ui.core-1.9.1.scss
+|   ...
+|
+|-- admin.scss       # Primary stylesheets for each project
+|-- account.scss
+`-- site.scss
+```
+
+*Folder Architecture acquired from **[The Sassway][sassway]** beginner article written by John W. Long*
 
 <a name="sassFeatures"></a>
 ## SASS Features
@@ -164,7 +229,8 @@ Sass 3.4.22 (Selective Steve)
 - [alistapart.com: Getting started with Sass](https://alistapart.com/article/getting-started-with-sass)
 
 #### Sass Guidelines and Standards
+[sassway]: http://thesassway.com/
 
 - [Sass Guidelines](https://sass-guidelin.es/)
-- [Sass Articles](http://thesassway.com/)
+- [Sass Articles][sassway]
 - [sitepoint.com: Sass Architecture](https://www.sitepoint.com/architecture-sass-project/)
