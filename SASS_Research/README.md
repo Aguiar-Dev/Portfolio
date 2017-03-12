@@ -171,14 +171,145 @@ stylesheets/
 <a name="sassFeatures"></a>
 ## SASS Features
 
+In this section I cover the main features that Sass brings with it. For every feature I provide an in-depth description and example code of how it functions. For more information on these features and more refer to the resources section.
 
 <a name="vars"></a>
 ### Variables
 
+Sass introduces the ability to incorporate variables into stylesheets making reusable code with ease. In order to define variables simply follow the following syntax.
+
+```scss
+// Defining a variable
+$bckg_color: #EB7F00;
+
+// Using the defined variable
+.button {
+  background-color: $bckg_color;
+}
+
+// When defining and using variables hyphens and underscores are interchangeable
+$column-width: 25%;
+
+.column {
+  // Will function properly
+  width: $column_width
+}
+```
+
+
+Much like variables in scripting languages they are available within the defined scope in the file, therefore if defined inside nested selectors they are only usable within that selector. To make variables that are usable everywhere in the file they have to be defined outside any nested selector.
+
+```scss
+// Defining variables within a nested selectors scope
+#cta {
+  $cta_padding: 25px 15px;
+  // Within Scope therefore will work
+  padding: $cta_padding;
+}
+
+#blog_cta {
+  // Outside of original scope therefore won't work
+  padding: $cta_padding;
+}
+
+// But if defined globally it can work no matter in what scope, there are two different ways to do this.
+// The first is by defining the variable like so
+$global_color: #000;
+
+.h2 {
+  color: $global_color;
+}
+
+// The second is by appending the global flag to a variable declared in a scope
+.buttons {
+  $buttons_color: #000 !global;
+  color: $buttons_color;
+}
+
+.button_blue {
+  color: $buttons_color;
+}
+```
+
+Another useful flag to use with variables is the `!default`. This allows us to set default values for variables in the event that none is provided. If provided the default value is overwritten.
+
+```scss
+// Defining variable and setting !default
+$accent_color: #F06060 !default;
+```
+
+**Data Types Supported**
+
+- Numbers: `e.g. 1, 2, 3, 4, 12px`
+- Strings: `e.g. "foo", 'bar', baz`
+- Colors: `e.g. blue, #0f0f0f, rgba(0, 0, 0, 0.5)`
+- Booleans: `e.g. true, false`
+- Nulls: `e.g. null`
+- List of Values: `e.g. 1.5em 1em 0 2em, Helvetica, Arial, sans-serif`
+- Value Maps: `e.g. (key1: value1, key2: value2)`
 
 <a name="nests"></a>
 ### Nesting
 
+One of the best and most useful features of Sass is its nesting. It allows us to nest declarations within declarations, making the use of child selectors a thing of the past. But with this nesting capability one has to keep in mind how readable the code will be, therefore it is common practice to not go further than 4 levels into nesting.
+
+```scss
+// Making a nested declaration
+.buttons {
+  width: 50%;
+
+  // nested declarations
+  p {
+    color: #fff;
+  }
+
+  div {
+    width: 100%;
+    padding: 5px 10px;
+  }
+}
+```
+
+When making nested declarations we can reference the parent selector by using the `&` symbol. These allows for pseudo selectors inside nested declarations.
+
+```scss
+// Create the parent selector
+.cta {
+  width: 80%;
+  background-color: #fff;
+
+  // Now make the nested declaration
+  .button {
+    width: 20%;
+    color: #000;
+    background-color: #F06060;
+
+    // use the & for the parent reference which will trigger depending on the reference type
+    &:hover {
+      color: #fff;
+    }
+
+    &:visited {
+      outline: none;
+    }
+  }
+}
+```
+
+With Nesting also comes the ability to nest properties. This allows us to create easier to read and reusable properties.
+
+```scss
+// create the declaration
+.headlines {
+
+  // define the nested property
+  font: {
+    family: Arial, sans-serif;
+    size: 26em;
+    weight: bold;
+  }
+}
+```
 
 <a name="operators"></a>
 ### Operators
