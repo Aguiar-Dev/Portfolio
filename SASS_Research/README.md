@@ -248,6 +248,8 @@ $accent_color: #F06060 !default;
 - List of Values: `e.g. 1.5em 1em 0 2em, Helvetica, Arial, sans-serif`
 - Value Maps: `e.g. (key1: value1, key2: value2)`
 
+---
+
 <a name="nests"></a>
 ### Nesting
 
@@ -311,29 +313,87 @@ With Nesting also comes the ability to nest properties. This allows us to create
 }
 ```
 
+---
+
 <a name="operators"></a>
 ### Operators
 
+In Sass we are allowed to run operators inside our `.scss` files. This allows for functionality in the stylesheets, making our designs more fluid and responsive. With Sass the basic mathematical functions are supported (e.g. Addition +, Subtraction -, Multiplication \*, Division /, and Modulo %). But in order to work with operators you must only use numbers and not suffixes like `em`, `px`, etc.
+
+```scss
+// Run some example operations
+p {
+  font: 10px/8px;             // Plain CSS, no division
+  $width: 1000px;
+  width: $width/2;            // Uses a variable, does division
+  width: round(1.5)/2;        // Uses a function, does division
+  height: (500px/2);          // Uses parentheses, does division
+  margin-left: 5px + 8px/2px; // Uses +, does division
+  font: (italic bold 10px/8px); // In a list, parentheses don't count
+}
+
+// It is also possible to utilize variables with a plain CSS / by using the #{$variable} syntax
+p {
+  $font-size: 20px;
+  $line-height: 46px;
+  font: #{$font-size}/#{$line-height};
+}
+```
+
+Operations can also be used for other situations like colors, strings, and booleans. Boolean operators would be `or`, `and`, and `not` and only work with booleans.
+
+```scss
+// Color Examples
+p {
+  color: #010203 + #040506;
+}
+
+p {
+  color: #010203 * 2;
+}
+
+// Colors with an alpha chanel must have the same alpha value in order for them to be used in arithmetic.
+p {
+  color: rgba(255, 0, 0, 0.75) + rgba(0, 255, 0, 0.75);
+}
+
+// String Examples
+p:before {
+  content: "Foo " + Bar;
+  font-family: sans- + "serif";
+}
+
+p {
+  margin: 3px + 4px auto;
+}
+```
+
+---
 
 <a name="funcs"></a>
 ### Functions
 
+---
 
 <a name="funcDirective"></a>
 ### Function Directives
 
+---
 
 <a name="mixins"></a>
 ### Mixins
 
+---
 
 <a name="imports"></a>
 ### Imports
 
+---
 
 <a name="extends"></a>
 ### Extends
 
+---
 
 <a name="placeholders"></a>
 ### Placeholders
