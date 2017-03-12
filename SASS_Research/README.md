@@ -1,6 +1,6 @@
 *[back to root directory](../../../)*
 
-# SASS Research and Example
+# SASS Research and Examples
 
 ## Table of Contents
 

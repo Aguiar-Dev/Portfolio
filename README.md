@@ -15,6 +15,7 @@ The final purpose of this project is to better display my experience and knowled
 - [Agile Development Overview](./Agile_Development_Overview/) - Overview of the fundamentals of Agile and extensive Glossary.
 - [ES6 Overview and Guide](./ES6_Overview/) - Guide on the most popular ES6 features with examples.
 - [NPM Utility Tool](./Utility_Tool/) - Node JS tool for debugging, logging, and version bumping projects.
+- [SASS Research and Examples](./SASS_Research/) - Research covering the basic usage of SASS and how to implement it.
 
 ## Contact Me
 
