@@ -104,3 +104,24 @@ It was initially designed by Hampton Catlin and developed by Natalie Weizenbaum,
 
 <a name="resources"></a>
 ## Resources
+
+#### Sass Information Sources
+[wiki]: https://en.wikipedia.org/wiki/Sass_(stylesheet_language)
+
+- [Sass Wikipedia][wiki]
+- [What is Sass](http://www.creativebloq.com/web-design/what-is-sass-111517618)
+
+#### Sass Features Sources
+
+- [Sass-lang Documentation](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#variable_defaults_)
+- [Sass-lang Functions](http://sass-lang.com/documentation/Sass/Script/Functions.html)
+- [sitepoint.com: Getting Started with Sass](https://www.sitepoint.com/getting-started-with-sass/)
+- [hongkiat.com: Getting started with Sass](http://www.hongkiat.com/blog/getting-started-saas/)
+- [scotch.io: Getting started with Sass](https://scotch.io/tutorials/getting-started-with-sass)
+- [alistapart.com: Getting started with Sass](https://alistapart.com/article/getting-started-with-sass)
+
+#### Sass Guidelines and Standards
+
+- [Sass Guidelines](https://sass-guidelin.es/)
+- [Sass Articles](http://thesassway.com/)
+- [sitepoint.com: Sass Architecture](https://www.sitepoint.com/architecture-sass-project/)
