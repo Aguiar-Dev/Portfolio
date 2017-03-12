@@ -34,6 +34,9 @@ At the end of the documentation you can find all the resources used for this res
 <a name="whatIsSass"></a>
 ## What is SASS?
 
+SASS, or Syntactically Awesome Style Sheets, is a CSS preprocessor which allows developers to write stylesheets in a more convenient way and then compiles it into CSS. SASS allows developers to use features such as variables, nesting, functions, and more allowing faster creation and modularity in stylesheets. With SASS stylesheet creation is faster, more organized, and more modular than vanilla CSS.
+
+It was initially designed by Hampton Catlin and developed by Natalie Weizenbaum, then continued as SassScript by Weizenbaum and Chris Eppstein. Because of this Sass consists of two different syntaxes, the original '.sass' which used indentation to separate code blocks and newline chars to separate rules. Then there is the new and most commonly used syntax '.scss', which uses braces to denote code blocks and semicolons to separate lines within a code block.
 
 <a name="whySass"></a>
 ## Why use SASS?
