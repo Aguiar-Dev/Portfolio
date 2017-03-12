@@ -41,6 +41,17 @@ It was initially designed by Hampton Catlin and developed by Natalie Weizenbaum,
 <a name="whySass"></a>
 ## Why use SASS?
 
+Sass makes the development workflow easier and more refined that what it is when only using vanilla CSS. It brings to the table features that we have used before when scripting functionality, but allows us to implement this into our styling. Not only does this benefit us, the developers, but it also makes our applications more modular and easier to tweak by new members to the team.
+
+Some of the big benefits to using Sass are:
+
+- Nested syntax
+- Defining Variables
+- Defining Mixins
+- Mathematical Functions
+- Importing Files
+- Inheritance between styles
+- Operational Functions
 
 <a name="settingUp"></a>
 ## Setting Up Sass
