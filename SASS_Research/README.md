@@ -56,9 +56,40 @@ Some of the big benefits to using Sass are:
 <a name="settingUp"></a>
 ## Setting Up Sass
 
+This section is meant to walk you through the process of installing a Sass Compiler on your machine and how to integrate it into projects. Depending on how you would rather use Sass, you can either install it through the command line or by using applications. Since I used the Mac approach for Ruby I will showcase this one. But I will include links to the apps and additional command line instructions.
 
 <a name="install"></a>
-### Installing Sass
+### Installing Sass CLI
+
+The following are the instructions to get Sass setup through Ruby. If using a Mac skip to step 3, since Mac comes with Ruby pre-installed, otherwise start from step 1.
+
+1. For a distribution of Linux, you will first need to install Ruby. You can install Ruby through the apt package manager, rbenv, or rvm.
+
+  ```bash
+  sudo su -c "gem install sass"
+  ```
+
+2. For Windows you will also need to install Ruby on your machine. The fastest approach for this is the use the [Ruby Installer](http://rubyinstaller.org/).
+
+3. If using Mac then Ruby comes pre-installed and since Sass has a Ruby dependency it makes the process easier.
+
+4. Open up terminal or the command prompt on your machine. Install Sass using the following line.
+
+  ```bash
+  # Use this to install sass and all dependencies
+  gem install sass
+
+  # If error message from the latter use this
+  sudo gem install sass
+  ```
+
+5. Now double check that you have Sass installed by running `sass -v`.
+```bash
+# Should return the following, if returned you have Sass installed
+Sass 3.4.22 (Selective Steve)
+```
+
+6. Now Sass is installed and ready for use. Have fun using Sass!
 
 
 <a name="applications"></a>
@@ -121,6 +152,7 @@ Some of the big benefits to using Sass are:
 
 - [Sass Wikipedia][wiki]
 - [What is Sass](http://www.creativebloq.com/web-design/what-is-sass-111517618)
+- [Installing Sass](http://sass-lang.com/install)
 
 #### Sass Features Sources
 
