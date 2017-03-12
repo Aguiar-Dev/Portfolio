@@ -87,7 +87,6 @@ The following are the instructions to get Sass setup through Ruby. If using a Ma
 # Should return the following, if returned you have Sass installed
 Sass 3.4.22 (Selective Steve)
 ```
-
 6. Now Sass is installed and ready for use. Have fun using Sass!
 
 
