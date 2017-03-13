@@ -169,7 +169,7 @@ stylesheets/
 *Folder Architecture acquired from **[The Sassway][sassway]** beginner article written by John W. Long*
 
 <a name="sassFeatures"></a>
-## SASS Features
+## Sass Features
 
 In this section I cover the main features that Sass brings with it. For every feature I provide an in-depth description and example code of how it functions. For more information on these features and more refer to the resources section.
 
@@ -373,10 +373,54 @@ p {
 <a name="funcs"></a>
 ### Functions
 
+Sass comes packed with a plethora of functions that facilitate complex tasks. These functions are called using the normal CSS function syntax. It is also possible to call these with key arguments.
+
+```scss
+// Displaying an example of basic function syntax
+p {
+  color: hsl(0, 100%, 50%);
+}
+
+// Example of functions called with key arguments.
+p {
+  color: hsl($hue: 0, $saturation: 100%, $lightness: 50%);
+}
+```
+
+For more information on all the functions that come built into Sass, refer to the **[Function Module](http://sass-lang.com/documentation/Sass/Script/Functions.html)** page of the Sass Documentation.
+
 ---
 
 <a name="funcDirective"></a>
 ### Function Directives
+
+Apart from giving us a large amount of Functions at our disposal, Sass gives us the ability to create our own. Function Directives make coding stylesheets more versatile. Creating and using these Function Directives is very similar to using Mixins.
+
+```scss
+// define a function directive for use with variables
+@function columnWidth($width, $columns, $margin){
+    @return ($width / $columns) - ($margin * 2);
+}
+
+// Now the function directive that was created can be utilized throughout the code.
+$width: 100%;
+$columns: 2;
+$margin: 5%;
+
+.container {
+  width: $width;
+}
+
+.column {
+  background: #1abc9c;
+  height: 200px;
+  display: block;
+  float: left;
+  // functions can accept set variables as argument, just like in scripting languages
+  width: getColumnWidth($width,$columns, $margin);
+  margin: 0 $margin;
+}
+```
 
 ---
 
@@ -392,11 +436,6 @@ p {
 
 <a name="extends"></a>
 ### Extends
-
----
-
-<a name="placeholders"></a>
-### Placeholders
 
 
 <a name="resources"></a>
