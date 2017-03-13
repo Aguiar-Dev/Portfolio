@@ -1,6 +1,6 @@
 *[back to root directory](../../../)*
 
-# SASS Research and Examples
+# Sass Research and Examples
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@
   - [Installing Sass](#install)
   - [Sass Applications](#applications)
   - [Sass Folder Structure](#folderStructure)
-- [SASS Features](#sassFeatures)
+- [Sass Features](#sassFeatures)
   - [Variables](#vars)
   - [Nesting](#nests)
   - [Operators](#operators)
@@ -20,25 +20,24 @@
   - [Mixins](#mixins)
   - [Imports](#imports)
   - [Extend](#extends)
-  - [Placeholders](#placeholders)  
 - [Resources](#resources)
 
 <a name="intro"></a>
 ## Introduction
 
-This project is a Overview of the basic usage of SASS and how to implement it. The purpose of this project is to gain experience in SASS and its multiple uses. Throughout the documentation you will find basics on SASS and examples on how to use it. Included in this research is also a custom project that I implemented using only HTML5, CSS3, and SASS in order to test out the material that I research. I will add instructions on how to clone the repository to view the example webpage.
+This project is a Overview of the basic usage of Sass and how to implement it. The purpose of this project is to gain experience in Sass and its multiple uses. Throughout the documentation you will find basics on Sass and examples on how to use it. Included in this research is also a custom project that I implemented using only HTML5, CSS3, and Sass in order to test out the material that I research. I will add instructions on how to clone the repository to view the example webpage.
 
-At the end of the documentation you can find all the resources used for this research project and any tools that were used with SASS. Like always I utilize redacted information from multiple websites and articles so I will try my best to document these in the Resources section of the documentation. Thanks for taking the time to view my SASS Research project, hope you enjoyed it and learned something new.
+At the end of the documentation you can find all the resources used for this research project and any tools that were used with Sass. Like always I utilize redacted information from multiple websites and articles so I will try my best to document these in the Resources section of the documentation. Thanks for taking the time to view my Sass Research project, hope you enjoyed it and learned something new.
 
 <a name="whatIsSass"></a>
-## What is SASS?
+## What is Sass?
 
-SASS, or Syntactically Awesome Style Sheets, is a CSS preprocessor which allows developers to write stylesheets in a more convenient way and then compiles it into CSS. SASS allows developers to use features such as variables, nesting, functions, and more allowing faster creation and modularity in stylesheets. With SASS stylesheet creation is faster, more organized, and more modular than vanilla CSS.
+Sass, or Syntactically Awesome Style Sheets, is a CSS preprocessor which allows developers to write stylesheets in a more convenient way and then compiles it into CSS. Sass allows developers to use features such as variables, nesting, functions, and more allowing faster creation and modularity in stylesheets. With Sass stylesheet creation is faster, more organized, and more modular than vanilla CSS.
 
 It was initially designed by Hampton Catlin and developed by Natalie Weizenbaum, then continued as SassScript by Weizenbaum and Chris Eppstein. Because of this Sass consists of two different syntaxes, the original '.sass' which used indentation to separate code blocks and newline chars to separate rules. Then there is the new and most commonly used syntax '.scss', which uses braces to denote code blocks and semicolons to separate lines within a code block.
 
 <a name="whySass"></a>
-## Why use SASS?
+## Why use Sass?
 
 Sass makes the development workflow easier and more refined that what it is when only using vanilla CSS. It brings to the table features that we have used before when scripting functionality, but allows us to implement this into our styling. Not only does this benefit us, the developers, but it also makes our applications more modular and easier to tweak by new members to the team.
 
@@ -427,15 +426,122 @@ $margin: 5%;
 <a name="mixins"></a>
 ### Mixins
 
+Mixins are a very useful directive that allows us to define styles that can be re-used throughout the stylesheet. They function similarly to `@extend`, but with the added ability to supply and interpret arguments to the mixin. To define a mixin in Sass use the `@mixin` directive and to utilize them it use `@include`.
+
+```scss
+// Define a headline mixin for section headlines
+@mixin headline {
+  padding: 5px;
+  color: #225378;
+  font: {
+    size: 34px;
+    style: italic;
+    weight: bold;
+    family: Verdana, sans-serif;
+  }
+}
+
+// then simply use @include to use it
+.cta {
+  width: 100%;
+
+  p {
+    @include headline;
+  }
+}
+
+// Mixins also allow the use of other mixins inside them
+// First make sure that all the mixins being used are declared
+@mixin blue_btn_color {
+  background-color: #225378;
+  color: #fff;
+}
+@mixin blue_btn_dimensions {
+  width: 50%;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+// Then simply @include them in the compiled mixin
+@mixin blue_btn {
+  @include blue_btn_color;
+  @include blue_btn_dimensions;
+}
+```
+
+Mixins also allow the use of arguments to define what the properties will be. This is useful when looking to use the same styling for different sections, but slightly changing them.
+
+```scss
+// Defining a @mixin with arguments
+@mixin solid-border($color, $width) {
+  border: {
+    color: $color;
+    width: $width;
+    style: solid;
+  }
+}
+
+// Passing arguments to the @mixin
+p { @include solid-border(blue, 1in); }
+```
+
 ---
 
 <a name="imports"></a>
 ### Imports
 
+Imports allow the use of multiple `.scss` or `.sass` files by splitting up big stylesheets into smaller files, then importing them all into one `main.scss`. Importing is as easy as writing one line of code.
+
+```scss
+// In order to import any additional .scss or .sass files simply use the following syntax
+@import "buttons.scss"
+@import "links.scss"
+@import "home.scss"
+
+// Sass even allows you to import files without the use of the file extensions
+@import "buttons"
+@import "links"
+@import "home"
+```
+
 ---
 
 <a name="extends"></a>
 ### Extends
+
+Sass introduces an easy and quick way to share styles between different rules and selectors. `@extend` works perfectly to make code re-useable and less cluttered.
+
+```scss
+// To use @extend simply have an existing style you want to use
+.alert {
+  width: 30%;
+  font: {
+    size: 24px;
+    family: Arial, sans-serif;
+    weight: bold;
+  }
+}
+
+// then reuse it with @extend
+.alert_danger {
+  @extends .alert;
+  background-color: #9A2D25;
+  color: #F06060;
+}
+
+// It can be reused as many times as needed
+.alert_info {
+  @extends .alert;
+  background-color: #0077B5;
+  color: #1DA1F2;
+}
+
+.alert_success {
+  @extends .alert;
+  background-color: #63903C;
+  color: #C1E467;
+}
+```
 
 
 <a name="resources"></a>
