@@ -524,20 +524,20 @@ Sass introduces an easy and quick way to share styles between different rules an
 
 // then reuse it with @extend
 .alert_danger {
-  @extends .alert;
+  @extend .alert;
   background-color: #9A2D25;
   color: #F06060;
 }
 
 // It can be reused as many times as needed
 .alert_info {
-  @extends .alert;
+  @extend .alert;
   background-color: #0077B5;
   color: #1DA1F2;
 }
 
 .alert_success {
-  @extends .alert;
+  @extend .alert;
   background-color: #63903C;
   color: #C1E467;
 }
