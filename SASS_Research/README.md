@@ -494,14 +494,14 @@ Imports allow the use of multiple `.scss` or `.sass` files by splitting up big s
 
 ```scss
 // In order to import any additional .scss or .sass files simply use the following syntax
-@import "buttons.scss"
-@import "links.scss"
-@import "home.scss"
+@import "buttons.scss";
+@import "links.scss";
+@import "home.scss";
 
 // Sass even allows you to import files without the use of the file extensions
-@import "buttons"
-@import "links"
-@import "home"
+@import "buttons";
+@import "links";
+@import "home";
 ```
 
 ---
