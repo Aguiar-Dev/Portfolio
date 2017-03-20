@@ -1,41 +1,52 @@
-/* Color Variables */
-/* Font Variables */
 body {
-  width: 100%;
-  height: 100%;
-  background-color: #A39594;
-  font-family: source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 120%;
-  color: #6E675F; }
+    width: 100%;
+    height: 100%;
+    background-color: #A39594;
+    font-family: source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 120%;
+    color: #6E675F;
+}
 
 .container {
-  width: 50%;
-  height: 50%;
-  border: 10px solid #423E37;
-  background-color: #EDEBD7;
-  border-radius: 5px;
-  margin: 0 auto;
-  padding: 25px; }
-  .container .h1 {
+    width: 50%;
+    height: 50%;
+    border: 10px solid #423E37;
+    background-color: #EDEBD7;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.container .h1 {
     font-family: source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #423E37;
-    font-size: 140%; }
-  .container .main_text {
+    font-size: 140%;
+}
+
+.container .main_text {
     font-size: 90%;
     line-height: 1.4em;
-    font-weight: 500; }
-  .container .quote {
+    font-weight: 500;
+}
+
+.container .quote {
     font-style: italic;
     font-weight: 500;
     font-size: 85%;
-    color: #E3B23C; }
-    .container .quote span {
-      color: #6E675F;
-      font-weight: 400; }
-  .container .sub_text {
+    color: #E3B23C;
+}
+
+.container .quote span {
+    color: #6E675F;
+    font-weight: 400;
+}
+
+.container .sub_text {
     font-size: 80%;
     font-weight: bold;
     font-style: italic;
-    color: #6E675F; }
+    color: #6E675F;
+}
+
 
 /*# sourceMappingURL=variables.css.map */
