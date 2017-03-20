@@ -1,0 +1,39 @@
+/* Color Variables */
+/* Font Variables */
+/* Padding and Margin Numbers */
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #93A3BC;
+  font-family: source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 120%;
+  color: #6F584B; }
+
+.container {
+  width: 51%;
+  height: 50%;
+  border: 10px solid #594236;
+  background-color: #CCDDE2;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 25px; }
+  .container .listings {
+    list-style: none;
+    margin: 30px auto;
+    padding: 0; }
+    .container .listings li {
+      text-align: center;
+      width: 20%;
+      margin: 30px auto;
+      padding: 30px 50px;
+      display: inline-block; }
+  .container .squares, .container .rectangles {
+    display: inline-block;
+    border: 1px solid #594236;
+    height: 120px;
+    width: 140px; }
+  .container .rectangles {
+    display: inline-block;
+    width: 560px; }
+
+/*# sourceMappingURL=operators.css.map */
