@@ -191,7 +191,7 @@ $column-width: 25%;
 
 .column {
   // Will function properly
-  width: $column_width
+  width: $column_width;
 }
 ```
 
