@@ -1,0 +1,57 @@
+/* Color Variables */
+$color_flint: #6E675F;
+$color_armadillo: #423E37;
+$color_mbrown: #E3B23C;
+$color_eggshell: #EDEBD7;
+$color_zorba: #A39594;
+
+/* Font Variables */
+$font_family: source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Once all variables are declared it is safe to utilize these inside other declarations.
+body {
+  width: 100%;
+  height: 100%;
+  // Using three different variables in one declaration
+  background-color: $color_zorba;
+  font-family: $font_family;
+  font-size: 120%;
+  color: $color_flint;
+}
+
+// Also showcasing some nesting properties here with the container class
+.container {
+  width: 50%;
+  height: 50%;
+  border: 10px solid $color_armadillo;
+  background-color: $color_eggshell;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 25px;
+  .h1 {
+    font-family: $font_family;
+    color: $color_armadillo;
+    font-size: 140%;
+  }
+  .main_text {
+    font-size: 90%;
+    line-height: 1.4em;
+    font-weight: 500;
+  }
+  .quote {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 85%;
+    color: $color_mbrown;
+    span {
+      color: $color_flint;
+      font-weight: 400;
+    }
+  }
+  .sub_text {
+    font-size: 80%;
+    font-weight: bold;
+    font-style: italic;
+    color: $color_flint;
+  }
+}
